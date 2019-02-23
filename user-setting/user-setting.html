@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API管理</title>
+    <link rel="stylesheet" href="../css/cssreset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./user-setting.css">
+</head>
+
+<body>
+    <img src="../img/background.png" class="all-background" alt="">
+    <div class="head">
+        <img src="../img/logo.png" alt="" class="logoimg">
+        <div class="headright">
+            <ul class="headrigth-top">
+                <li class="nice"><img src="../img/me.png" alt=""> 昵称</li>
+                <li><a href="../modification_password/modification.html"><img src="../img/change-password.png" alt=""> 修改密码</a> </li>
+                <li class="accout"><img src="../img/money.png" alt=""> 账户余额</li>
+                <li><a href="../user-setting/user-setting.html"><img src="../img/set.png" alt=""> 设置</a> </li>
+                <li class="meg-click"><a href="../message/message.html"><img src="../img/information.png" alt=""> 消息中心</a></li>
+                <li><img src="../img/quit.png" alt=""> 退出</li>
+            </ul>
+            <div class="headright-bot">
+                <span class="system-ancement">系统公告: xxxxxxxxxxxx</span>
+                <a class="addbuton" href="../task-management/task-management.html"><span>+添加任务</span></a> 
+            </div>
+             <!-- 信息下拉 -->
+             <div class="meg-pop-up">
+                <p class="standing-p">站内消息通知</p>
+                <ul class="message-u">
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                </ul>
+                <a href="" class="more-a">查看更多</a>
+            </div>
+              <!-- 昵称下的下拉 -->
+              <div class="userset-namerenbox">
+                <p class="kailong"></p>
+                <ul>
+                    <li>实名认证</li>
+                    <li>用户设置</li>
+                </ul>
+            </div>
+            <!-- 账户余额 -->
+            <div class="accout-box">
+                <div class="account-balance">
+                    <p class="kailong"></p>
+                    <div>
+                        <p>余额: <span>200云</span> </p>
+                        <p>测币余额: <span>500 <img src="../img/money.png" alt=""></span></p>
+                    </div>
+                    <button class="inter-cz">在线充值</button>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- 用户设置 通过实名认证-->
+    <div class="maincontent userset-box">
+        <div class="contenleft">
+            <div class="monpoints">
+                <img src="../img/set.png" alt="" class="montimg">
+                <span class="gneral">用&nbsp;户&nbsp;设&nbsp;置</span>
+            </div>
+            <hr class="linehr">
+            <p class="report reporte8">实名认证</p>
+        </div>
+        <div class="contentright">
+            <div class="conright-top">
+                <ul class="conright-nav">
+                    <li>
+                        <a href="../new-general/new-general.html"><img src="../img/survey-white.png" alt="">概况</a>
+                    </li>
+                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a>
+                    </li>
+                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a>
+                    </li>
+                    <li><a href="../API-police/API-police.html"><img src="../img/API.png" alt="">API管理</a></li>
+                    <li><a href="../self-built-police/self-built-police.html"><img src="../img/business.png"
+                                alt="">自建监控点管理</a></li>
+                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png"
+                                alt="">财务管理</a></li>
+                </ul>
+            </div>
+            <div class="cetnen-prot">
+                <p class="nav">设置>>用户设置>>实名认证</p>
+                <!-- 个人用户完成认证的 -->
+                <div class="centen-cen personage-attestation">
+                    <img class="centen-user" src="../img/portrait.png" alt="">
+                    <img class="centen-check" src="../img/check.png" alt="">
+                    <div>
+                        <p class="centen-top">
+                            您已完成测域个人实名认证
+                            <a href="#">升级为企业认证>></a>
+                        </p>
+                        <p class="centen-name">真实姓名：**域</p>
+                        <p class="centen-phon">证件号码：340******119</p>
+                    </div>
+                </div>
+                <!-- 个人用户完成认证的 -->
+                <button type="button" class="setting-submit personage-attestation">返&nbsp;&nbsp;回</button>
+
+                <!-- 企业成认证的 -->
+                <div class="centen-cen firm-attestation">
+                    <img class="centen-user" src="../img/self-build-background1.png" alt="">
+                    <img class="centen-check" src="../img/check.png" alt="">
+                    <div>
+                        <p class="centen-top">
+                            您已完成测域企业认证                         
+                        </p>
+                        <p class="centen-name">法人姓名：**域</p>
+                        <p class="centen-phon">证件号码：340******119</p>
+                        <p class="centen-phon">统一社会信用代码：30******H</p>
+                    </div>
+                </div>
+                <!-- 企业成认证的 -->
+                <p class="firm-button firm-attestation">
+                    <button type="button" class="firm-submit">返&nbsp;&nbsp;回</button>
+                    <button type="button" class="firm-submit">修&nbsp;&nbsp;改</button>
+                </p>                
+
+                <div class="bottom">
+                    <img src="../img/user-setting-left.png" alt="">
+                    <img src="../img/user-setting.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- 个人认证资料 弹出 -->
+        <div class="popup-recharge">
+                <div class="check-background"></div>
+                <div class="popup-box">
+                    <p class="popup-namey">个人认证资料</p>
+                    <div class="data-personage">
+                        <ul class="personage-ul">
+                            <li>姓名：</li>
+                            <li>身份证号：</li>
+                            <li>身份证正面：</li>
+                            <li>身份证反面：</li>
+                            <li>手持身份证：</li>
+                        </ul>
+                        <ul class="personage-data-ul">
+                            <li><input type="text"></li>
+                            <li><input type="number"></li>
+                            <li class="name-databo">
+                                <div class="data-border">
+                                    <img src="../img/make-money.png" alt="">
+                                </div>
+                                <span class="color-d">备注：身份证反面为（带头像的）</span>
+                            </li>
+                            <li class="name-databo">
+                                <div class="data-border">
+                                    <p class="data-add">+</p>
+                                    <p class="data-name">点击上传</p>
+                                </div>
+                                <span class="color-d">备注：身份证反面为（带头像的）</span>
+                            </li>
+                            <li>
+                                <div class="data-border">
+                                    <p class="data-add">+</p>
+                                    <p class="data-name">点击上传</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="data-submit">提&nbsp;&nbsp;&nbsp;交</button>
+                    <img class="remove-x" src="../img/x.png" alt="">
+                </div>
+        </div>
+        
+        <!-- 个人信息 弹出-->
+        <div class="popup-message">
+            <div class="check-background"></div>
+            <div class="message-box">
+                <p class="message-name">个人信息</p>
+                <div class="data-personage message-personage">
+                    <ul class="message-name-ul">
+                        <li>真实姓名：</li>
+                        <li>身份证号：</li>
+                        <li>认证地区：</li>
+                    </ul>
+                    <ul class="message-value">
+                        <li>*域</li>
+                        <li>3**********88</li>
+                        <li>中国大陆</li>
+                    </ul>
+                </div>
+                    <p class="message-his">
+                        恭喜，您已完成测域个人实名认证。如果您的认证信息发生变更，可修改认证。
+                    </p>       
+                    <p class="message-button">
+                    <button type="button" class="message-confirm">确&nbsp;&nbsp;定</button>
+                    <button type="button" class="message-amend">修改认证</button>
+                    </p>
+                <img class="message-remove-x" src="../img/x.png" alt="">
+            </div>
+        </div>
+    
+        <!-- 企业信息 弹出-->
+        <div class="firm-message">
+            <div class="check-background"></div>
+            <div class="message-box">
+                <p class="message-name">企业信息</p>
+                <div class="data-personage message-personage">
+                    <ul class="message-name-ul">
+                        <li>真实姓名：</li>
+                        <li>身份证号：</li>
+                        <li>认证地区：</li>
+                    </ul>
+                    <ul class="message-value">
+                        <li>*域</li>
+                        <li>3**********88</li>
+                        <li>中国大陆</li>
+                    </ul>
+                </div>
+                    <p class="message-his">
+                        恭喜，您已完成测域企业认证。如果您的认证信息发生变更，可修改认证。
+                    </p>       
+                    <p class="message-button">
+                    <button type="button" class="message-confirm">确&nbsp;&nbsp;定</button>
+                    <button type="button" class="message-amend">修改认证</button>
+                    </p>
+                <img class="firm-message-remove" src="../img/x.png" alt="">
+            </div>
+        </div>
+    
+        <!-- 提示 弹出-->
+        <div class="popup-hint">
+            <div class="check-background"></div>
+            <div class="message-box hint-box">
+                <p class="message-name">提&nbsp;&nbsp;示</p>   
+                    <p class="hint-cen">
+                        恭喜，您已完成测域个人实名认证。如果您的认证信息发生变更，可修改认证。
+                        恭喜，您已完成测域个人实名认证。如果您的认证信息发生变更，可修改认证。
+                    </p>       
+                    <p class="message-button hint-button">
+                    <button type="button" class="hint-confirm">前往认证</button>
+                    <button type="button" class="hint-amend">返&nbsp;&nbsp;回</button>
+                    </p>            
+            </div>
+        </div>
+    
+        <!-- 企业提示 弹出-->
+        <div class="firm-hint">
+            <div class="check-background"></div>
+            <div class="message-box hint-box">
+                <p class="message-name">提&nbsp;&nbsp;示</p>   
+                    <p class="hint-cen">
+                        恭喜，您已完成测域个人实名认证。如果您的认证信息发生变更，可修改认证。
+                        恭喜，您已完成测域个人实名认证。如果您的认证信息发生变更，可修改认证。
+                    </p>       
+                    <p class="message-button hint-button">
+                    <button type="button" class="hint-confirm">前往升级认证</button>
+                    <button type="button" class="firm-amend">返&nbsp;&nbsp;回</button>
+                    </p>            
+            </div>
+        </div>
+    
+        <!-- 企业认证资料 弹出 -->
+        <div class="firm-recharge">
+            <div class="check-background"></div>
+            <div class="popup-box">
+                <p class="popup-name">企业认证资料</p>
+                <div class="data-personage">
+                    <ul class="personage-ul">
+                        <li>法人姓名：</li>
+                        <li>法人身份证号：</li>
+                        <li>统一社会信用代码：</li>
+                        <li>法人身份证正面：</li>
+                        <li>法人身份证反面：</li>
+                        <li>企业营业执照：</li>
+                    </ul>
+                    <ul class="personage-data-ul">
+                        <li><input type="text"></li>
+                        <li><input type="number"></li>
+                        <li><input type="text"></li>
+                        <li class="name-databo">
+                            <div class="data-border">
+                                <img src="../img/make-money.png" alt="">
+                            </div>
+                            <span class="color-d">备注：身份证正面为（带国徽的）其中身份证号码与填写号码一致。</span>
+                        </li>
+                        <li class="name-databo">
+                            <div class="data-border">
+                                <p class="data-add">+</p>
+                                <p class="data-name">点击上传</p>
+                            </div>
+                            <span class="color-d">备注：身份证反面为（带头像的）</span>
+                        </li>
+                        <li>
+                            <div class="data-border">
+                                <p class="data-add">+</p>
+                                <p class="data-name">点击上传</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="data-firm">提&nbsp;&nbsp;&nbsp;交</button>
+                <img class="firm-remove-x" src="../img/x.png" alt="">
+            </div>
+        </div>        
+    </div>
+    <!-- 安全设置 通过实名认证-->
+    <div class="maincontent security-box">
+        <div class="contenleft">
+            <div class="monpoints">
+                <img src="../img/set.png" alt="" class="montimg">
+                <span class="gneral">安&nbsp;全&nbsp;设&nbsp;置</span>
+            </div>
+            <hr class="linehr">
+            <p class="report reporte8">账户安全用户设置</p>
+        </div>
+        <div class="contentright">
+            <div class="conright-top">
+                <ul class="conright-nav">
+                    <li>
+                        <a href="../new-general/new-general.html"><img src="../img/survey-white.png" alt="">概况</a>
+                    </li>
+                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a>
+                    </li>
+                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a>
+                    </li>
+                    <li><a href="../API-police/API-police.html"><img src="../img/API.png" alt="">API管理</a></li>
+                    <li><a href="../self-built-police/self-built-police.html"><img src="../img/business.png"
+                                alt="">自建监控点管理</a></li>
+                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png"
+                                alt="">财务管理</a></li>
+                </ul>
+            </div>
+            <div class="cetnen-prot">
+                <p class="nav">设置>>安全设置</p>
+                <div class="surity-content">
+                    <span class="big-round"></span>
+                    <div class="right">
+                        <p class="login-p">登陆账号：trstyu <span>(您已通过实名认证)</span></p>
+                        <p class="regised-p">注册时间：2013年3月2日 上午10：30：00</p>
+                    </div>
+                </div>
+                <ul class="level-ul">
+                    <li>
+                        <div class="left">
+                            <p class="level-p">您当前的账号安全程度安全级别：</p>
+                            <div class="level-div">
+                                <p class="level-span">
+                                    <span class="level-class">低</span>
+                                    <span>中</span>
+                                    <span>高</span>
+                                </p>
+                                <P class="efforts">继续努力！</P>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <button type="button" class="has-set">已设置</button>
+                            <button type="button" class="change-set">修&nbsp;&nbsp;改</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="login-password">
+                            <div class="login-top">
+                                <p class="level-p">登陆密码：</p>
+                                <span>**********</span>
+                            </div>
+                            <p class="lensp">安全性高的密码可以使账号更安全。建议您定期
+                                更换密码，设置一个包含字母，符号或数字中至少两项且
+                                长度超过6位的密码。
+                            </p>
+                            
+                        </div>
+                        <div class="level-right">
+                            <button type="button" class="has-set">已设置</button>
+                            <button type="button" class="change-set">修&nbsp;&nbsp;改</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="login-password">
+                            <div class="login-top-one">
+                                <p class="level-p">手机绑定：</p>
+                                <span>您已绑定了手机136****2320 <span class="acuans">【您的手机为安全手机】</span></span>
+                            </div>
+                        </div>
+                        <div class="level-right">
+                            <button type="button" class="has-set">已设置</button>
+                            <button type="button" class="change-set">修&nbsp;&nbsp;改</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="login-password">
+                            <div class="login-top-two">
+                                <p class="level-p">备用邮箱：</p>
+                                <span>您已绑定了邮箱37863****@qq.com</span>
+                            </div>
+                            <p class="lensp">【阿里云发送的各类系统、营销、服务通知将发送到您的必备邮箱。】
+                                注：此处绑定的手机号及邮箱在用户添加报警设置时自动填充
+                            </p>
+                            
+                        </div>
+                        <div class="level-right">
+                            <button type="button" class="has-set">已设置</button>
+                            <button type="button" class="change-set">修&nbsp;&nbsp;改</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- 绑定手机号弹框 -->
+            <div class="iphoe-play-box">
+                <div class="small-play">
+                    <div class="play-warpbox">
+                        <ul class="play-lefts">
+                            <li>绑定手机号：</li>
+                            <li>验证码：</li>
+                        </ul>
+                        <ul class="play-rights">
+                            <li><input type="number"></li>
+                            <li><input type="number"><button>获取验证码</button></li>
+                        </ul>
+                </div>
+                    <p class="play-ps">
+                        <button type="button" class="ches">确认</button>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 修改密码弹框 -->
+            <div class="change-pass-box">
+                <div class="change-pass-small">
+                    <p class="change-titlep">修改密码</p>
+                    <img src="../img/x.png" alt="" class="change-delet">
+                    <div class="change-con">
+                        <ul class="change-lefts">
+                            <li>原密码：</li>
+                            <li>新密码：</li>
+                            <li>确认密码：</li>
+                        </ul>
+                        <ul class="change-rights">
+                            <li><input type="number"></li>
+                            <li><input type="number"></li>
+                            <li><input type="number"></li>
+                        </ul>
+                    </div>
+                    <button class="change-q">确&nbsp;&nbsp;认</button>
+                </div>
+            </div>
+
+              <!-- 设置成功 -->
+              <div class="setting-box">
+                <div class="setting-small">
+                    <p class="change-titlep">设&nbsp;&nbsp;置</p>
+                    <img src="../img/x.png" alt="" class="set-delet">
+                    <p class="set-success">
+                        <img src="../img/check.png" alt="">
+                        <span>修改成功！</span>
+                    </p>
+                </div>
+            </div>
+    </div>
+
+    
+    <!-- 公告弹框 -->
+    <div class="ancement-play-box">
+        <div class="play-inbox">
+            <div class="play-left-nav">
+                <ul>
+                    <li class="skyblue-color" id="new-play"><img src="../img/newest-full.png" alt=""> 最新公告</li>
+                    <li id="noread-play"><img src="../img/unread.png" class="play-img" alt="">未读公告</li>
+                    <li id="has-play"><img src="../img/read.png" class="play-img"  alt="">已读公告</li>
+                    <li id="all-play"><img src="../img/all.png" class="play-img"  alt="">所有系统公告</li>
+                </ul>
+            </div>
+            <ul class="play-right">
+                <!-- 最新公告 -->
+                <li class="hides showbox" id="new-play-id">
+                    <p class="popup-namey">标题内容</p>
+                    <p class="time">发布时间：2019-2-1</p>
+                    <img src="../img/x.png" alt="" class="delet">
+                    <p class="content">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈
+                    </p>
+                </li>
+            <!-- 未读公告 -->
+            <li class="hides" id="noread-play-id">
+                <div class="noread-div">
+                    <ul class="noread-ul">
+                        <li class="noread-lis" id="detail-one">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="detail-two">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="detail-three">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="detail-four">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap customBootstrap1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging-id" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="title-mains">
+                    <li class="tilte-li" id="detail-one-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="detail-two-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="detail-three-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li  class="tilte-li" id="detail-four-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                </ul>
+            </li>
+            <!-- 已读 -->
+            <li class="hides" id="has-play-id">
+                <div class="hasread-div">
+                    <ul class="noread-ul">
+                        <li class="noread-lis" id="has-detail-one">
+                            <div class="lis-box">
+                                <img src="../img/envelope.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="has-detail-two">
+                            <div class="lis-box">
+                                <img src="../img/envelope.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="has-detail-three">
+                            <div class="lis-box">
+                                <img src="../img/envelope.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="has-detail-four">
+                            <div class="lis-box">
+                                <img src="../img/envelope.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap customBootstrap1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging-id" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                        </div>
+                    </div>
+                 </div>
+                    <ul class="hasread-title-mains">
+                    <li class="tilte-li" id="has-detail-one-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="has-detail-two-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="has-detail-three-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li  class="tilte-li" id="has-detail-four-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                </ul>
+    
+            </li>
+            <!-- 所有 -->
+            <li class="hides" id="all-play-id">
+                <div class="allread-div">
+                    <ul class="noread-ul">
+                        <li class="noread-lis" id="allread-detail-one">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="allread-detail-two">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="allread-detail-three">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="allread-detail-four">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap customBootstrap1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging-id" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="allread-title-mains">
+                    <li class="tilte-li" id="allread-detail-one-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="allread-detail-two-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="allread-detail-three-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li  class="tilte-li" id="allread-detail-four-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                </ul>
+            </li>
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="./user-setting.js"></script>
+</body>
+
+</html>

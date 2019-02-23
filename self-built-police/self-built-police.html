@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>自建监控点管理</title>
+    <link rel="stylesheet" href="../css/cssreset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./self-built-police.css">
+</head>
+
+<body>
+    <img src="../img/background.png" class="all-background" alt="">
+    <div class="head">
+        <img src="../img/logo.png" alt="" class="logoimg">
+        <div class="headright">
+            <ul class="headrigth-top">
+                <li class="nice"><img src="../img/me.png" alt=""> 昵称</li>
+                <li><a href="../forget_password/forget.html"><img src="../img/change-password.png" alt=""> 修改密码</a></li>
+                <li class="accout"><img src="../img/money.png" alt=""> 账户余额</li>
+                <li><a href="../user-setting/user-setting.html"><img src="../img/set.png" alt="">设置</a></li>
+                <li class="meg-click"><a href="../message/message.html"><img src="../img/information.png" alt=""> 消息中心</a></li>
+                <li><img src="../img/quit.png" alt=""> 退出</li>
+            </ul>
+            <div class="headright-bot">
+                 <span class="system-ancement">系统公告: xxxxxxxxxxxx</span>
+                <a class="addbuton" href="../task-management/task-management.html"><span>+添加任务</span></a> 
+            </div>
+             <!-- 信息下拉 -->
+             <div class="meg-pop-up">
+                <p class="standing-p">站内消息通知</p>
+                <ul class="message-u">
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                </ul>
+                <a href="" class="more-a">查看更多</a>
+            </div>
+             <!-- 昵称下的下拉 -->
+             <div class="userset-namerenbox">
+                <p class="kailong"></p>
+                <ul>
+                    <li>实名认证</li>
+                    <li>用户设置</li>
+                </ul>
+            </div>
+            <!-- 账户余额 -->
+            <div class="accout-box">
+                <div class="account-balance">
+                    <p class="kailong"></p>
+                    <div>
+                        <p>余额: <span>200云</span> </p>
+                        <p>测币余额: <span>500 <img src="../img/money.png" alt=""></span></p>
+                    </div>
+                    <button class="inter-cz">在线充值</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="maincontent">
+        <div class="contenleft">
+            <div class="monpoints">
+                <img src="../img/business.png" alt="" class="montimg">
+                <span class="gneral">自建监控点管理</span>
+            </div>
+            <hr class="linehr">
+            <p class="report reporte8" id="centent-node">添加节点</p>
+            <p class="report" id="centent-my-node">我的节点</p>
+            <p class="report" id="centent-my-node1">自建监控点任务列表</p>
+            <p class="report" id="centent-node-general">自建监控点概况</p>
+        </div>
+        <div class="contentright">
+            <div class="conright-top">
+                <ul class="conright-nav">
+                    <li>
+                        <a href="../new-general/new-general.html"><img src="../img/survey-white.png" alt="">概况</a>
+                    </li>
+                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a>
+                    </li>
+                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a>
+                    </li>
+                    <li><a href="../API-police/API-police.html"><img src="../img/API.png" alt="">API管理</a></li>
+                    <li class="backless"><a href="../self-built-police/self-built-police.html" class="gaik"><img
+                                src="../img/business-blue.png" alt="">自建监控点管理</a></li>
+                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png"
+                                alt="">财务管理</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="centent centent-node">
+                    <p class="nav">首页>>自建监控点管理>>添加节点</p>
+                    <div class="self-inputs">
+                        <span class="self-token">添加Token：</span>
+                        <input type="text" class="self-input">
+                        <button type="button" class="self-button self-add">添&nbsp;加</button>
+                        <button type="button" class="self-button">重&nbsp;置</button>
+                    </div>
+                    <img class="self-back" src="../img/self-build-background.png" alt="">
+                    <img class="self-rigbackgr" src="../img/self-build-background1.png" alt="">
+                </div>
+
+                <div class="centent centent-my-node">
+                    <p class="nav">首页>>自建监控点管理>>我的节点</p>
+                    <div id="no-click"></div>
+                    <div class="my-atlas"></div>
+                    <ul class="police-list-name">
+                        <li>运营商</li>
+                        <li>区域</li>
+                        <li>节点名称</li>
+                        <li>系统状态</li>
+                        <li>启用状态</li>
+                        <li>在线时长</li>
+                        <li>更新时间</li>
+                    </ul>
+                    <ul class="police-list-data">
+                        <li class="list-lis">
+                            <ul class="police-list-datas">
+                                <li>移动</li>
+                                <li>大大师傅大师傅大师傅</li>
+                                <li>主机名</li>
+                                <li>士大夫</li>
+                                <li>士大夫对</li>
+                                <li>大师傅对</li>
+                                <li>2019年33月33日 11时23分23秒</li>
+                            </ul>
+                        </li>
+                        <li class="list-lis">
+                            <ul class="police-list-datas">
+                                <li>移动</li>
+                                <li>大大师傅大师傅大师傅</li>
+                                <li>主机名</li>
+                                <li>士大夫</li>
+                                <li>士大夫对</li>
+                                <li>大师傅对</li>
+                                <li>2019年33月33日 11时23分23秒</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="centent centent-my-node1">
+                    <p class="nav">首页>>自建监控点管理>>自建监控点任务列表</p>
+                    <ul class="police-list-name">
+                        <li>请求URL</li>
+                        <li>请求类型</li>
+                        <li>是否请求完成</li>
+                        <li>创建时间</li>
+                    </ul>
+                    <ul class="police-list-data">
+                        <li class="list-lis">
+                            <ul class="police-list-datas">
+                                <li>移动</li>
+                                <li>大大师</li>
+                                <li>主机名</li>
+                                <li>2019年33月33日 11时23分23秒</li>
+                            </ul>
+                        </li>
+                        <li class="list-lis">
+                            <ul class="police-list-datas">
+                                <li>移动</li>
+                                <li>大大师傅</li>
+                                <li>主机名</li>
+                                <li>2019年33月33日 11时23分23秒</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap customBootstrap-my-node1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page" type="number"> 页</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="centent centent-node-general">
+                    <p class="nav general-nav">首页>>监控点概况</p>
+                    <div class="general-value">
+                        <p class="recharge">充&nbsp;&nbsp;&nbsp;&nbsp;值</p>
+                        <div class="recharge-box">
+                            <div class="recharge-user">
+                                <p class="recharge-head">
+                                    <img src="../img/user.png" alt="">
+                                    用户名
+                                </p>
+                                <p class="sum">余额：&nbsp;<span>100.00RMB</span></p>
+                                <p class="sequencing">测币余额：&nbsp;<span>109</span><img src="../img/cy.png" alt=""></p>
+                                <button tyle="button" class="recharge-button">充&nbsp;值</button>
+                            </div>
+                            <div class="transverter">
+                                <div class="transverter-cen">
+                                    <p class="transverter-top"><span>转换器</span>1元=100测币</p>
+                                    <p class="arrows">
+                                        <input type="number">
+                                        <span class="yuan">元</span>
+                                        <img src="../img/arrows.png" alt="">
+                                        <span class="blue">100</span>&nbsp;<span class="bi">测币</span><br>
+                                    </p>
+                                    <button type="button" class="transverter-button">兑换</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="general-api">
+                        <p class="newest">API使用统计</p>
+                        <ul class="ip-title">
+                            <li class="ip-id api-id">监控ID</li>
+                            <li class="ip-ip api-url">监控URL</li>
+                            <li class="ip-time">监控时间</li>
+                            <li class="ip-state ip-state-type">接口请求类型</li>
+                            <li class="ip-operation ip-operation01">接口次数</li>
+                        </ul>
+                        <ul class="data-list api-list">
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip ip-ip1">www.324.com</li>
+                                    <li class="ip-time ip-time1">1992-1-1</li>
+                                    <li class="ip-state api-state data-state1">-</li>
+                                    <li class="ip-operation api-operation ip-operation1">10</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip ip-ip1">www.324.com</li>
+                                    <li class="ip-time ip-time1">1992-1-1</li>
+                                    <li class="ip-state api-state data-state1">-</li>
+                                    <li class="ip-operation api-operation ip-operation1">10</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip ip-ip1">www.324.com</li>
+                                    <li class="ip-time ip-time1">1992-1-1</li>
+                                    <li class="ip-state api-state data-state1">-</li>
+                                    <li class="ip-operation api-operation ip-operation1">10</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip ip-ip1">www.324.com</li>
+                                    <li class="ip-time ip-time1">1992-1-1</li>
+                                    <li class="ip-state api-state data-state1">-</li>
+                                    <li class="ip-operation api-operation ip-operation1">10</li>
+                                </ul>
+                            </li>
+                            <li class="data-list-li">
+                                <ul class="ip-title data-list-cen">
+                                    <li class="ip-id data-id">1233</li>
+                                    <li class="ip-ip ip-ip1">www.324.com</li>
+                                    <li class="ip-time ip-time1">1992-1-1</li>
+                                    <li class="ip-state api-state data-state1">-</li>
+                                    <li class="ip-operation api-operation ip-operation1">10</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- 分页 -->
+                        <div class="customBootstrap customBootstrap1">
+                            <div class="customBootstrap-relvaer">
+                                <p>共100条</p>
+                                <ul id="paging-api" class="pagination"></ul>
+                                <p class="page-p">前往 <input class="get-page1" type="number"> 页</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="node-show">
+                        <div id="no-click1"></div>
+                        <div class="node-show-img"></div>
+                        <ul class="node-show-hint">
+                            <li><span></span>差</li>
+                            <li><span></span>警告</li>
+                            <li><span></span>较好</li>
+                            <li><span></span>好</li>
+                        </ul>
+                        <p class="node-show-name">
+                            节点显示区
+                        </p>
+                        <ul class="detail-title">
+                            <li>运营商</li>
+                            <li>节点省份</li>
+                            <li>节点市区</li>
+                            <li>主机名</li>
+                            <li>系统状态</li>
+                            <li>运行时间</li>
+                        </ul>
+                        <ul class="fox-d">
+                            <li class="invoice-lis">
+                                <ul class="lis-li">
+                                    <li>123456788</li>
+                                    <li>产品名称</li>
+                                    <li>订单</li>
+                                    <li>2019-1-2</li>
+                                    <li>￥2000.00</li>
+                                    <li>￥2000.00</li>
+                                </ul>
+                            </li>
+                            <li class="invoice-lis">
+                                <ul class="lis-li">
+                                    <li>2019-1-2</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>8</li>
+                                    <li>5</li>
+                                    <li>的说法地方</li>
+                                </ul>
+                            </li>
+                            <li class="invoice-lis">
+                                <ul class="lis-li">
+                                    <li>2019-1-2</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>8</li>
+                                    <li>5</li>
+                                    <li>的说法地方</li>
+                                </ul>
+                            </li>
+                            <li class="invoice-lis">
+                                <ul class="lis-li">
+                                    <li>2019-1-2</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>8</li>
+                                    <li>5</li>
+                                    <li>的说法地方</li>
+                                </ul>
+                            </li>
+                            <li class="invoice-lis">
+                                <ul class="lis-li">
+                                    <li>2019-1-2</li>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>8</li>
+                                    <li>5</li>
+                                    <li>的说法地方</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- 分页 -->
+                        <div class="customBootstrap customBootstrap1">
+                            <div class="customBootstrap-relvaer">
+                                <p>共100条</p>
+                                <ul id="lists-paing" class="pagination"></ul>
+                                <p class="page-p">前往 <input class="get-page2" type="number"> 页</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 添加节点 弹出 -->
+    <div class="popup-recharge node-box">
+        <div class="check-background"></div>
+        <div class="popup-box">
+            <p class="popup-name">添加节点</p>
+            <img class="node-remove-x remove-x" src="../img/x.png" alt="">
+            <div class="self-file">
+                <ul class="node-name">
+                    <li>节点：</li>
+                    <li>运营商：</li>
+                    <li>省份：</li>
+                    <li>行政区：</li>
+                </ul>
+                <ul class="node-value">
+                    <li class="node-value-li node-value-li1">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <label class="select select-type1"></label>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu mes-typecli">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">http</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">ping</label>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="node-value-li node-value-li2">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <label class="select select-type2"></label>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu mes-typecli">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">http</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">ping</label>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="distpicker">
+                        <div data-toggle="distpicker">
+                            <select></select>
+                            <select></select>
+                            <select></select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="node-submit">提&nbsp;&nbsp;交</button>
+        </div>
+    </div>
+
+    <!-- 节点提示 弹出-->
+    <div class="node-hint">
+        <div class="check-background"></div>
+        <div class="message-box hint-box">
+            <p class="hint-cen">
+                【个人实名认证。如果您的认证信息发生变更，可修改认证。
+                恭喜，您已完成测域个人实名认证。如果您】
+            </p>
+            <p class="message-button hint-button">
+                <button type="button" class="node-hint-button">确&nbsp;&nbsp;定</button>
+            </p>
+        </div>
+    </div>
+    <!-- 充值弹出框 -->
+    <div class="popup-recharge">
+        <div class="popup-box">
+            <p class="popup-name">充值页面</p>
+            <p class="popup-number"><span>订单号:</span>12312313132</p>
+            <p class="method">
+                <span>充值方式:</span>
+                <img src="../img/wechat.png" class="method-img" alt="">
+                <img src="../img/alipay.png" class="method-img" alt="">
+                <img src="../img/bank_card.png" class="method-img" alt="">
+            </p>
+            <p class="popup-money">
+                <span>充值金额:</span>
+                <input type="number">
+                <span class="yuan1">元</span>
+                <span class="reds">备注：充值金额不得小于50元</span>
+            </p>
+            <p class="popup-button">
+                <button type="button">确定充值</button>
+                <button type="button" class="canel">取消充值</button>
+            </p>
+        </div>
+    </div>
+    <!-- 公告弹框 -->
+    <div class="ancement-play-box">
+        <div class="play-inbox">
+            <div class="play-left-nav">
+                <ul>
+                    <li class="skyblue-color" id="new-play"><img src="../img/newest-full.png" alt=""> 最新公告</li>
+                    <li id="noread-play"><img src="../img/unread.png" class="play-img" alt="">未读公告</li>
+                    <li id="has-play"><img src="../img/read.png" class="play-img"  alt="">已读公告</li>
+                    <li id="all-play"><img src="../img/all.png" class="play-img"  alt="">所有系统公告</li>
+                </ul>
+            </div>
+            <ul class="play-right">
+                <!-- 最新公告 -->
+                <li class="hides showbox" id="new-play-id">
+                    <p class="popup-namey">标题内容</p>
+                    <p class="time">发布时间：2019-2-1</p>
+                    <img src="../img/x.png" alt="" class="delet">
+                    <p class="content">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈
+                    </p>
+                </li>
+                <!-- 未读公告 -->
+                <li class="hides" id="noread-play-id">
+                <div class="noread-div">
+                    <ul class="noread-ul">
+                        <li class="noread-lis" id="detail-one">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="detail-two">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="detail-three">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="detail-four">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap customBootstrap1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging-id" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="title-mains">
+                    <li class="tilte-li" id="detail-one-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="detail-two-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="detail-three-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li  class="tilte-li" id="detail-four-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                </ul>
+            </li>
+            <!-- 已读 -->
+            <li class="hides" id="has-play-id">
+                <div class="hasread-div">
+                    <ul class="noread-ul">
+                        <li class="noread-lis" id="has-detail-one">
+                            <div class="lis-box">
+                                <img src="../img/envelope.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="has-detail-two">
+                            <div class="lis-box">
+                                <img src="../img/envelope.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="has-detail-three">
+                            <div class="lis-box">
+                                <img src="../img/envelope.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="has-detail-four">
+                            <div class="lis-box">
+                                <img src="../img/envelope.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap customBootstrap1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging-id" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                        </div>
+                    </div>
+                 </div>
+                    <ul class="hasread-title-mains">
+                    <li class="tilte-li" id="has-detail-one-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="has-detail-two-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="has-detail-three-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li  class="tilte-li" id="has-detail-four-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                </ul>
+    
+            </li>
+            <!-- 所有 -->
+            <li class="hides" id="all-play-id">
+                <div class="allread-div">
+                    <ul class="noread-ul">
+                        <li class="noread-lis" id="allread-detail-one">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="allread-detail-two">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="allread-detail-three">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="allread-detail-four">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap customBootstrap1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging-id" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="allread-title-mains">
+                    <li class="tilte-li" id="allread-detail-one-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="allread-detail-two-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="allread-detail-three-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li  class="tilte-li" id="allread-detail-four-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                </ul>
+            </li>
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jqPaginator.js"></script>
+    <script src="../js/distpicker.data.min.js"></script>
+    <script src="../js/distpicker.min.js"></script>
+    <script src="../js/jsMap-1.1.1.min.js"></script>
+    <script src="./self-built-police.js"></script>
+</body>
+
+</html>

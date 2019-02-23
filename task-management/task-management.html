@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>任务管理</title>
+    <link rel="stylesheet" href="../css/cssreset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./task-management.css">
+</head>
+
+<body>
+    <img src="../img/background.png" class="all-background" alt="">
+    <div class="head">
+        <img src="../img/logo.png" alt="" class="logoimg">
+        <div class="headright">
+            <ul class="headrigth-top">
+                <li class="nice"><img src="../img/me.png" alt=""> 昵称</li>
+                <li><a href="../forget_password/forget.html"><img src="../img/change-password.png" alt=""> 修改密码</a></li>
+                <li class="accout"><img src="../img/money.png" alt=""> 账户余额</li>
+                <li><a href="../user-setting/user-setting.html"><img src="../img/set.png" alt="">设置</a></li>
+                <li class="meg-click"><a href="../message/message.html"><img src="../img/information.png" alt=""> 消息中心</a></li>
+                <li><img src="../img/quit.png" alt=""> 退出</li>
+            </ul>
+            <div class="headright-bot">
+                <span class="system-ancement">系统公告: xxxxxxxxxxxx</span>
+                <a class="addbuton" href="../task-management/task-management.html"><span>+添加任务</span></a> 
+            </div>
+             <!-- 信息下拉 -->
+             <div class="meg-pop-up">
+                <p class="standing-p">站内消息通知</p>
+                <ul class="message-u">
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                </ul>
+                <a href="" class="more-a">查看更多</a>
+            </div>
+              <!-- 昵称下的下拉 -->
+              <div class="userset-namerenbox">
+                <p class="kailong"></p>
+                <ul>
+                    <li>实名认证</li>
+                    <li>用户设置</li>
+                </ul>
+            </div>
+            <!-- 账户余额 -->
+            <div class="accout-box">
+                <div class="account-balance">
+                    <p class="kailong"></p>
+                    <div>
+                        <p>余额: <span>200云</span> </p>
+                        <p>测币余额: <span>500 <img src="../img/money.png" alt=""></span></p>
+                    </div>
+                    <button class="inter-cz">在线充值</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="maincontent">
+        <div class="contenleft">
+            <div class="monpoints">
+                <img src="../img/mission.png" alt="" class="montimg">
+                <span class="gneral">任&nbsp;务&nbsp;管&nbsp;理</span>
+            </div>
+            <hr class="linehr">
+            <p class="report">任务信息</p>
+            <p class="report reporte8">创建任务</p>
+        </div>
+        <div class="contentright">
+            <div class="conright-top">
+                <ul class="conright-nav">
+                    <li>
+                        <a href="../new-general/new-general.html"><img src="../img/survey-white.png" alt="">概况</a>
+                    </li>
+                    <li class="backless"><a href="../task-management/task-management.html" class="gaik"><img
+                                src="../img/mission-blue.png" alt="">任务管理</a></li>
+                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a>
+                    </li>
+                    <li><a href="../API-police/API-police.html"><img src="../img/API.png" alt="">API管理</a></li>
+                    <li><a href="../self-built-police/self-built-police.html"><img src="../img/business.png"
+                                alt="">自建监控点管理</a></li>
+                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png"
+                                alt="">财务管理</a></li>
+                </ul>
+            </div>
+            <div class="centent centent-message">
+                <p class="nav">首页>>任务管理>>任务信息</p>
+                <ul class="message-ul">
+                    <li class="mes-id">ID</li>
+                    <li class="mes-name">任务名称</li>
+                    <li class="mes-address">监控地址</li>
+                    <li class="mes-time">创建时间</li>
+                    <li class="mes-type">任务类型</li>
+                    <li class="mes-state">状态 (Status)</li>
+                    <li class="mes-set">报警设置</li>
+                    <li class="mes-operationg">操作</li>
+                </ul>
+                <ul class="mes-input">
+                    <li><input class="id" type="text"></li>
+                    <li><input class="name" type="text"></li>
+                    <li><input class="address" type="text"></li>
+                    <li>
+                        <input class="time start-time7" type="text">
+                        <img class="xkes7" src="../img/x.png" alt="">
+                        <div id='schedule-box7' class="boxshaw"></div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <label class="select select-type"></label>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu mes-typecli">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">http</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">ping</label>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-default dropdown-toggle dropdown-toggle1"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <label class="select select-state"></label>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu mes-state1">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">运行</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">暂停</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">终止</label>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mes-set1"></li>
+                    <li><button type="button" class="mes-button">搜&nbsp;索</button></li>
+                </ul>
+
+                <!-- data-list这个里面是列表，这个data-list的ul不要隐藏 -->
+                <ul class="data-list">
+                    <li class="list-li">
+                        <ul class="message-ul data-list-ul">
+                            <li class="data-id">123342</li>
+                            <li class="data-name">加工圈</li>
+                            <li class="data-address">www.jiagongquan.com</li>
+                            <li class="data-time">2010-1-2</li>
+                            <li class="data-type">http</li>
+                            <li class="data-state">暂停</li>
+                            <li class="data-set">设置</li>
+                            <li class="data-operationg">
+                                <img class="seek1-img" src="../img/seek1.png" alt="">
+                                <img class="amend-img" src="../img/amend.png" alt="">
+                                <img class="delete-img" src="../img/delete.png" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-li">
+                        <ul class="message-ul data-list-ul">
+                            <li class="data-id">123342</li>
+                            <li class="data-name">加工圈</li>
+                            <li class="data-address">www.jiagongquan.com</li>
+                            <li class="data-time">2010-1-2</li>
+                            <li class="data-type">ping</li>
+                            <li class="data-state">暂停</li>
+                            <li class="data-set">设置</li>
+                            <li class="data-operationg">
+                                <img class="seek1-img" src="../img/seek1.png" alt="">
+                                <img class="amend-img" src="../img/amend.png" alt="">
+                                <img class="delete-img" src="../img/delete.png" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 分页 -->
+                <div class="customBootstrap">
+                    <div class="customBootstrap-relvaer">
+                        <p>共100条</p>
+                        <ul id="paging" class="pagination"></ul>
+                        <p class="page-p">前往 <input class="get-page" type="number"> 页</p>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="centent centent-establish">
+                <p class="nav">首页>>任务管理>>创建任务</p>
+                <p class="establish-top">
+                    <button type="button" class="esta-but esta-but-blue">创建HTTP任务</button><button type="button"
+                        class="esta-but">创建PING任务</button>
+                </p>
+                <p class="establish-red establish-hint">带*的选项为必填项</p>
+                <!-- http的 -->
+                <div class="check-flex establish-http">
+                    <ul class="update-left establish-lfet">
+                        <li><span class="establish-red">*</span>任务名称：</li>
+                        <li><span class="establish-red">*</span>监控地址：</li>
+                        <li><span class="establish-red">*</span>监测频率：</li>
+                        <li class="establish-police"><span class="establish-red">*</span>报警模板：</li>
+                        <li class="establish-hides">Host：</li>
+                        <li class="establish-hides">Domain：</li>
+                        <li class="establish-hides">Http超时间：</li>
+                        <li class="establish-hides">Speed：</li>
+                        <li class="chang-du establish-hides">最大内容下载长度：</li>
+                        <li class="chang-du1 establish-hides">Cookie：</li>
+                        <li class="chang-du1 establish-hides">Referer：</li>
+                        <li class="chang-du2 establish-hides">user_agent：</li>
+                        <li class="establish-hides">开始时间：</li>
+                        <li class="endtime establish-hides">结束时间：</li>
+                        <li class="lsp establish-hides"><span class="establish-red">*</span>lsp：</li>
+                        <li class="establish-hides"><span class="establish-red">*</span>Status：</li>
+                    </ul>
+                    <ul class="update-right">
+                        <li><input type="text"></li>
+                        <li><input type="text"></li>
+                        <li class="new-seek-radio update-times">
+                            <label class="new-seek-one">
+                                <input type="radio" name="time" checked value="6小时">
+                                <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                                6小时
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="2小时">
+                                <span class="new-seek-sele"><span></span></span>
+                                2小时
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="1小时">
+                                <span class="new-seek-sele"><span></span></span>
+                                1小时
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="30分钟">
+                                <span class="new-seek-sele"><span></span></span>
+                                30分钟
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="15分钟">
+                                <span class="new-seek-sele"><span></span></span>
+                                15分钟
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="10分钟">
+                                <span class="new-seek-sele"><span></span></span>
+                                10分钟
+                            </label>
+                        </li>
+                        <li class="update-times establish-id establish-police">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <label class="select select-type">ID:15181</label>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu mes-typecli">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">ID:15181</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">ID:15183</label>
+                                    </a>
+                                </li>
+                            </ul>
+                            <span class="establish-blue">
+                                注明：您需要在警报管理中增加报警模板，该区域将显示所有报警模板
+                            </span>
+                        </li>
+                        <li class="establish-hides"><input type="text"></li>
+                        <li class="establish-hides"><input type="text"></li>
+                        <li class="establish-hides"><input type="text"></li>
+                        <li class="establish-hides"><input type="text"></li>
+                        <li class="establish-hides"><input type="text"></li>
+                        <li class="establish-hides"><input class="cookie" type="text"></li>
+                        <li class="establish-hides"><input class="referer" type="text"></li>
+                        <li class="establish-hides"><input class="agent" type="text"></li>
+                        <li class="establish-hides heights">
+                            <input type="text" class="start-time start-time3">
+                            <img class="xkes3" src="../img/x.png" alt="">
+                            <div id='schedule-box3' class="boxshaw"></div>
+                        </li>
+                        <li class="establish-hides heights">
+                            <input type="text" class="start-time start-time4">
+                            <img class="xkes4" src="../img/x.png" alt="">
+                            <div id='schedule-box4' class="boxshaw"></div>
+                        </li>
+                        <li class="checkbox-update establish-hides">
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" 1 value="电信">
+
+                                电信
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="联通">
+
+                                联通
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="铁通">
+
+                                铁通
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="移动">
+
+                                移动
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="教育网">
+
+                                教育网
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="科技网">
+
+                                科技网
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="华数">
+
+                                华数
+                            </label> <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="鹏博士">
+
+                                鹏博士
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="有线通">
+
+                                有线通
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="广电网">
+
+                                广电网
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="视讯宽带">
+
+                                视讯宽带
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="国外">
+
+                                国外
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="其它">
+
+                                其它
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="香港">
+
+                                香港
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="台湾">
+
+                                台湾
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="澳门">
+
+                                澳门
+                            </label>
+                        </li>
+                        <li class="new-seek-radio status-radio establish-hides">
+                            <label class="new-seek-one">
+                                <input type="radio" name="status" checked value="运行">
+                                <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                                运行
+                            </label>
+                            <label>
+                                <input type="radio" name="status" value="暂停">
+                                <span class="new-seek-sele"><span></span></span>
+                                暂停
+                            </label>
+                            <label>
+                                <input type="radio" name="status" value="终止">
+                                <span class="new-seek-sele"><span></span></span>
+                                终止
+                            </label>
+                        </li>
+                    </ul>
+                    <span class="establish-advanced">高级</span>
+                    <button type="button" class="establish-button">创&nbsp;&nbsp;建</button>
+                </div>
+
+                <!-- PING的 -->
+                <div class="check-flex establish-PING">
+                    <ul class="update-left establish-lfet">
+                        <li><span class="establish-red">*</span>任务名称：</li>
+                        <li><span class="establish-red">*</span>监控地址：</li>
+                        <li><span class="establish-red">*</span>监测频率：</li>
+                        <li class="establish-police"><span class="establish-red">*</span>报警模板：</li>
+                        
+                        <li class="establish-hides1">Domain：</li>
+                        <li class="establish-hides1">Ping超时间：</li>
+                        <li class="establish-hides1">包大小：</li>
+                        <li class="chang-du establish-hides1 check-fabao09">发包数：</li>
+                        <li class="establish-hides1">开始时间：</li>
+                        <li class="endtime establish-hides1">结束时间：</li>
+                        <li class="lsp establish-hides1"><span class="establish-red">*</span>lsp：</li>
+                        <li class="establish-hides1"><span class="establish-red">*</span>Status：</li>
+                    </ul>
+                    <ul class="update-right">
+                        <li><input type="text"></li>
+                        <li><input type="text"></li>
+                        <li class="new-seek-radio update-times">
+                            <label class="new-seek-one">
+                                <input type="radio" name="time" checked value="6小时">
+                                <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                                6小时
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="2小时">
+                                <span class="new-seek-sele"><span></span></span>
+                                2小时
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="1小时">
+                                <span class="new-seek-sele"><span></span></span>
+                                1小时
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="30分钟">
+                                <span class="new-seek-sele"><span></span></span>
+                                30分钟
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="15分钟">
+                                <span class="new-seek-sele"><span></span></span>
+                                15分钟
+                            </label>
+                            <label>
+                                <input type="radio" name="time" value="10分钟">
+                                <span class="new-seek-sele"><span></span></span>
+                                10分钟
+                            </label>
+                        </li>
+                        <li class="update-times establish-id establish-police">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <label class="select select-type">ID:15181</label>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu mes-typecli">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">ID:15181</label>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <label class="select">ID:15183</label>
+                                    </a>
+                                </li>
+                            </ul>
+                            <span class="establish-blue">
+                                注明：您需要在警报管理中增加报警模板，该区域将显示所有报警模板
+                            </span>
+                        </li>
+                       
+                        <li class="establish-hides1"><input type="text"></li>
+                        <li class="establish-hides1"><input type="text"></li>
+                        <li class="establish-hides1"><input type="text"></li>
+                        <li class="establish-hides1"><input type="text"></li>
+                        <li class="establish-hides1 heights">
+                            <input type="text" class="start-time start-time1">
+                            <img class="xkes" src="../img/x.png" alt="">
+                            <div id='schedule-box' class="boxshaw"></div>
+                        </li>
+                        <li class="establish-hides1 heights">
+                            <input type="text" class="start-time start-time2">
+                            <img class="xkes1" src="../img/x.png" alt="">
+                            <div id='schedule-box1' class="boxshaw"></div>
+                        </li>
+                        <li class="checkbox-update establish-hides1">
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" 1 value="电信">
+
+                                电信
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="联通">
+
+                                联通
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="铁通">
+
+                                铁通
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="移动">
+
+                                移动
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="教育网">
+
+                                教育网
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="科技网">
+
+                                科技网
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="华数">
+
+                                华数
+                            </label> <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="鹏博士">
+
+                                鹏博士
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="有线通">
+
+                                有线通
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="广电网">
+
+                                广电网
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="视讯宽带">
+
+                                视讯宽带
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="国外">
+
+                                国外
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="其它">
+
+                                其它
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="香港">
+
+                                香港
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="台湾">
+
+                                台湾
+                            </label>
+                            <label class="new-seek-one">
+                                <input type="checkbox" name="lsp" value="澳门">
+
+                                澳门
+                            </label>
+                        </li>
+                        <li class="new-seek-radio status-radio establish-hides1">
+                            <label class="new-seek-one">
+                                <input type="radio" name="status" checked value="运行">
+                                <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                                运行
+                            </label>
+                            <label>
+                                <input type="radio" name="status" value="暂停">
+                                <span class="new-seek-sele"><span></span></span>
+                                暂停
+                            </label>
+                            <label>
+                                <input type="radio" name="status" value="终止">
+                                <span class="new-seek-sele"><span></span></span>
+                                终止
+                            </label>
+                        </li>
+                    </ul>
+                    <span class="establish-advanced1">高级</span>
+                    <button type="button" class="establish-button">创&nbsp;&nbsp;建</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 查看详情的 -->
+    <div class="check">
+        <div class="check-background"></div>
+        <div class="check-box">
+            <div class="check-flex">
+                <ul class="check-left">
+                    <li>ID</li>
+                    <li>任务名称</li>
+                    <li>监控地址</li>
+                    <li>监测频率</li>
+                    <li>最大节点数</li>
+                    <li>Host</li>
+                    <li>Domain</li>
+                    <li>监控文件</li>
+                    <li>监控端口</li>
+                    <li>Http超时时间</li>
+                    <li>Speed</li>
+                    <li>最大内容下载长度</li>
+                    <li>Cookie</li>
+                    <li>Referer</li>
+                    <li>user_agent</li>
+                    <li>Ping超时时间</li>
+                    <li>包大小</li>
+                    <li>发包数</li>
+                    <li>任务类型</li>
+                    <li>Status</li>
+                    <li>创建时间</li>
+                    <li>开始时间</li>
+                    <li>结束时间</li>
+                </ul>
+                <ul class="check-right">
+                    <li>ID</li>
+                    <li>任务名称</li>
+                    <li>监控地址</li>
+                    <li>监测频率</li>
+                    <li>最大节点数</li>
+                    <li>Host</li>
+                    <li>Domain</li>
+                    <li>监控文件</li>
+                    <li>监控端口</li>
+                    <li>Http超时时间</li>
+                    <li>Speed</li>
+                    <li>最大内容下载长度</li>
+                    <li>Cookie</li>
+                    <li>Referer</li>
+                    <li>user_agent</li>
+                    <li>Ping超时时间</li>
+                    <li>包大小</li>
+                    <li>发包数</li>
+                    <li>任务类型</li>
+                    <li>Status</li>
+                    <li>创建时间</li>
+                    <li>开始时间</li>
+                    <li>结束时间</li>
+                </ul>
+            </div>
+            <button class="check-button" type="button">返&nbsp;&nbsp;回</button>
+        </div>
+    </div>
+
+    <!-- 更新 -->
+    <div class="update">
+        <div class="check-background"></div>
+        <div class="check-box">
+            <div class="check-flex">
+                <ul class="update-left">
+                    <li>*任务名称</li>
+                    <li>*监控地址</li>
+                    <li>*监测频率</li>
+                    <li>Host</li>
+                    <li>Domain</li>
+                    <li>Http超时间</li>
+                    <li>Speed</li>
+                    <li class="chang-du">最大内容下载长度</li>
+                    <li class="chang-du1">Cookie</li>
+                    <li class="chang-du1">Referer</li>
+                    <li class="chang-du2">user_agent</li>
+                    <li>开始时间</li>
+                    <li class="endtime">结束时间</li>
+                    <li class="lsp">*lsp</li>
+                    <li>*Status</li>
+                </ul>
+                <ul class="update-right">
+                    <li><input type="text"></li>
+                    <li><input type="text"></li>
+                    <li class="new-seek-radio update-times">
+                        <label class="new-seek-one">
+                            <input type="radio" name="time" checked value="6小时">
+                            <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                            6小时
+                        </label>
+                        <label>
+                            <input type="radio" name="time" value="2小时">
+                            <span class="new-seek-sele"><span></span></span>
+                            2小时
+                        </label>
+                        <label>
+                            <input type="radio" name="time" value="1小时">
+                            <span class="new-seek-sele"><span></span></span>
+                            1小时
+                        </label>
+                        <label>
+                            <input type="radio" name="time" value="30分钟">
+                            <span class="new-seek-sele"><span></span></span>
+                            30分钟
+                        </label>
+                        <label>
+                            <input type="radio" name="time" value="15分钟">
+                            <span class="new-seek-sele"><span></span></span>
+                            15分钟
+                        </label>
+                        <label>
+                            <input type="radio" name="time" value="10分钟">
+                            <span class="new-seek-sele"><span></span></span>
+                            10分钟
+                        </label>
+                    </li>
+                    <li><input type="text"></li>
+                    <li><input type="text"></li>
+                    <li><input type="text"></li>
+                    <li><input type="text"></li>
+                    <li><input type="text"></li>
+                    <li><input class="cookie" type="text"></li>
+                    <li><input class="referer" type="text"></li>
+                    <li><input class="agent" type="text"></li>
+                    <li class="heights">
+                        <input type="text" class="start-time start-time5">
+                        <img class="xkes5" src="../img/x.png" alt="">
+                        <div id='schedule-box5' class="boxshaw"></div>
+                    </li>
+                    <li class="heights">
+                        <input type="text" class="start-time start-time6">
+                        <img class="xkes6" src="../img/x.png" alt="">
+                        <div id='schedule-box6' class="boxshaw"></div>
+                    </li>
+                    <li class="checkbox-update">
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" 1 value="电信">
+
+                            电信
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="联通">
+
+                            联通
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="铁通">
+
+                            铁通
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="移动">
+
+                            移动
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="教育网">
+
+                            教育网
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="科技网">
+
+                            科技网
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="华数">
+
+                            华数
+                        </label> <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="鹏博士">
+
+                            鹏博士
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="有线通">
+
+                            有线通
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="广电网">
+
+                            广电网
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="视讯宽带">
+
+                            视讯宽带
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="国外">
+
+                            国外
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="其它">
+
+                            其它
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="香港">
+
+                            香港
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="台湾">
+
+                            台湾
+                        </label>
+                        <label class="new-seek-one">
+                            <input type="checkbox" name="lsp" value="澳门">
+
+                            澳门
+                        </label>
+                    </li>
+                    <li class="new-seek-radio status-radio">
+                        <label class="new-seek-one">
+                            <input type="radio" name="status" checked value="运行">
+                            <span class="new-seek-sele"><span class="new-seek-sele-span"></span></span>
+                            运行
+                        </label>
+                        <label>
+                            <input type="radio" name="status" value="暂停">
+                            <span class="new-seek-sele"><span></span></span>
+                            暂停
+                        </label>
+                        <label>
+                            <input type="radio" name="status" value="终止">
+                            <span class="new-seek-sele"><span></span></span>
+                            终止
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <p class="bottom">
+                <button type="button">确认修改</button>
+                <button type="button" class="base">返&nbsp;&nbsp;回</button>
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <!-- 删除提示 -->
+    <div class="remove">
+        <div class="remove-box">
+            <p class="remove-name"><span>士大夫但是sdf</span>显示:</p>
+            <p class="remove-text">确定删除这条数据吗</p>
+            <p class="remove-button">
+                <button type="button">确定</button>
+                <button type="button" class="remove-base">取消</button>
+            </p>
+            <img class="remove-x" src="../img/x.png" alt="">
+        </div>
+    </div>
+    <!-- 公告弹框 -->
+    <div class="ancement-play-box">
+            <div class="play-inbox">
+                <div class="play-left-nav">
+                    <ul>
+                        <li class="skyblue-color" id="new-play"><img src="../img/newest-full.png" alt=""> 最新公告</li>
+                        <li id="noread-play"><img src="../img/unread.png" class="play-img" alt="">未读公告</li>
+                        <li id="has-play"><img src="../img/read.png" class="play-img"  alt="">已读公告</li>
+                        <li id="all-play"><img src="../img/all.png" class="play-img"  alt="">所有系统公告</li>
+                    </ul>
+                </div>
+                <ul class="play-right">
+                    <!-- 最新公告 -->
+                    <li class="hides showbox" id="new-play-id">
+                        <p class="popup-namey">标题内容</p>
+                        <p class="time">发布时间：2019-2-1</p>
+                        <img src="../img/x.png" alt="" class="delet">
+                        <p class="content">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                    </li>
+                <!-- 未读公告 -->
+                <li class="hides" id="noread-play-id">
+                    <div class="noread-div">
+                        <ul class="noread-ul">
+                            <li class="noread-lis" id="detail-one">
+                                <div class="lis-box">
+                                    <img src="../img/envelope-un.png" alt="">
+                                    <div class="right">
+                                        <p class="popup-title">标题内容</p>
+                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                            加工圈加工圈加工圈加工圈
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="time">发布时间：2019-2-1</span>
+                            </li>
+                            <li class="noread-lis" id="detail-two">
+                                <div class="lis-box">
+                                    <img src="../img/envelope-un.png" alt="">
+                                    <div class="right">
+                                        <p class="popup-title">标题内容</p>
+                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                            加工圈加工圈加工圈加工圈
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="time">发布时间：2019-2-1</span>
+                            </li>
+                            <li class="noread-lis" id="detail-three">
+                                <div class="lis-box">
+                                    <img src="../img/envelope-un.png" alt="">
+                                    <div class="right">
+                                        <p class="popup-title">标题内容</p>
+                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                            加工圈加工圈加工圈加工圈
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="time">发布时间：2019-2-1</span>
+                            </li>
+                            <li class="noread-lis" id="detail-four">
+                                <div class="lis-box">
+                                    <img src="../img/envelope-un.png" alt="">
+                                    <div class="right">
+                                        <p class="popup-title">标题内容</p>
+                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                            加工圈加工圈加工圈加工圈
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="time">发布时间：2019-2-1</span>
+                            </li>
+                        </ul>
+                        <!-- 分页 -->
+                        <div class="customBootstrap customBootstrap1">
+                            <div class="customBootstrap-relvaer">
+                                <p>共100条</p>
+                                <ul id="paging-id" class="pagination"></ul>
+                                <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="title-mains">
+                        <li class="tilte-li" id="detail-one-id">
+                            <div class="unread-top">
+                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                            <p class="time-unread">发布时间：2019-2-1</p>
+                            </div>
+                            <img src="../img/x.png" alt="" class="delet-unread">
+                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈
+                            </p>
+                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                        </li>
+                        <li class="tilte-li"  id="detail-two-id">
+                            <div class="unread-top">
+                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                            <p class="time-unread">发布时间：2019-2-1</p>
+                            </div>
+                            <img src="../img/x.png" alt="" class="delet-unread">
+                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈
+                            </p>
+                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                        </li>
+                        <li class="tilte-li"  id="detail-three-id">
+                            <div class="unread-top">
+                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                            <p class="time-unread">发布时间：2019-2-1</p>
+                            </div>
+                            <img src="../img/x.png" alt="" class="delet-unread">
+                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈
+                            </p>
+                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                        </li>
+                        <li  class="tilte-li" id="detail-four-id">
+                            <div class="unread-top">
+                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                            <p class="time-unread">发布时间：2019-2-1</p>
+                            </div>
+                            <img src="../img/x.png" alt="" class="delet-unread">
+                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈
+                            </p>
+                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                        </li>
+                    </ul>
+                </li>
+                <!-- 已读 -->
+                <li class="hides" id="has-play-id">
+                    <div class="hasread-div">
+                        <ul class="noread-ul">
+                            <li class="noread-lis" id="has-detail-one">
+                                <div class="lis-box">
+                                    <img src="../img/envelope.png" alt="">
+                                    <div class="right">
+                                        <p class="popup-title">标题内容</p>
+                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                            加工圈加工圈加工圈加工圈
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="time">发布时间：2019-2-1</span>
+                            </li>
+                            <li class="noread-lis" id="has-detail-two">
+                                <div class="lis-box">
+                                    <img src="../img/envelope.png" alt="">
+                                    <div class="right">
+                                        <p class="popup-title">标题内容</p>
+                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                            加工圈加工圈加工圈加工圈
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="time">发布时间：2019-2-1</span>
+                            </li>
+                            <li class="noread-lis" id="has-detail-three">
+                                <div class="lis-box">
+                                    <img src="../img/envelope.png" alt="">
+                                    <div class="right">
+                                        <p class="popup-title">标题内容</p>
+                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                            加工圈加工圈加工圈加工圈
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="time">发布时间：2019-2-1</span>
+                            </li>
+                            <li class="noread-lis" id="has-detail-four">
+                                <div class="lis-box">
+                                    <img src="../img/envelope.png" alt="">
+                                    <div class="right">
+                                        <p class="popup-title">标题内容</p>
+                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                            加工圈加工圈加工圈加工圈
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="time">发布时间：2019-2-1</span>
+                            </li>
+                        </ul>
+                        <!-- 分页 -->
+                        <div class="customBootstrap customBootstrap1">
+                            <div class="customBootstrap-relvaer">
+                                <p>共100条</p>
+                                <ul id="paging-id" class="pagination"></ul>
+                                <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                            </div>
+                        </div>
+                     </div>
+                    <ul class="hasread-title-mains">
+                        <li class="tilte-li" id="has-detail-one-id">
+                            <div class="unread-top">
+                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                            <p class="time-unread">发布时间：2019-2-1</p>
+                            </div>
+                            <img src="../img/x.png" alt="" class="delet-unread">
+                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈
+                            </p>
+                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                        </li>
+                        <li class="tilte-li"  id="has-detail-two-id">
+                            <div class="unread-top">
+                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                            <p class="time-unread">发布时间：2019-2-1</p>
+                            </div>
+                            <img src="../img/x.png" alt="" class="delet-unread">
+                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈
+                            </p>
+                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                        </li>
+                        <li class="tilte-li"  id="has-detail-three-id">
+                            <div class="unread-top">
+                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                            <p class="time-unread">发布时间：2019-2-1</p>
+                            </div>
+                            <img src="../img/x.png" alt="" class="delet-unread">
+                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈
+                            </p>
+                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                        </li>
+                        <li  class="tilte-li" id="has-detail-four-id">
+                            <div class="unread-top">
+                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                            <p class="time-unread">发布时间：2019-2-1</p>
+                            </div>
+                            <img src="../img/x.png" alt="" class="delet-unread">
+                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈
+                            </p>
+                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                        </li>
+                    </ul>
+        
+                </li>
+                <!-- 所有 -->
+                <li class="hides" id="all-play-id">
+                    <div class="allread-div">
+                        <ul class="noread-ul">
+                            <li class="noread-lis" id="allread-detail-one">
+                                <div class="lis-box">
+                                    <img src="../img/envelope-un.png" alt="">
+                                    <div class="right">
+                                        <p class="popup-title">标题内容</p>
+                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                            加工圈加工圈加工圈加工圈
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="time">发布时间：2019-2-1</span>
+                            </li>
+                            <li class="noread-lis" id="allread-detail-two">
+                                <div class="lis-box">
+                                    <img src="../img/envelope-un.png" alt="">
+                                    <div class="right">
+                                        <p class="popup-title">标题内容</p>
+                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                            加工圈加工圈加工圈加工圈
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="time">发布时间：2019-2-1</span>
+                            </li>
+                            <li class="noread-lis" id="allread-detail-three">
+                                <div class="lis-box">
+                                    <img src="../img/envelope-un.png" alt="">
+                                    <div class="right">
+                                        <p class="popup-title">标题内容</p>
+                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                            加工圈加工圈加工圈加工圈
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="time">发布时间：2019-2-1</span>
+                            </li>
+                            <li class="noread-lis" id="allread-detail-four">
+                                <div class="lis-box">
+                                    <img src="../img/envelope-un.png" alt="">
+                                    <div class="right">
+                                        <p class="popup-title">标题内容</p>
+                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                            加工圈加工圈加工圈加工圈
+                                        </p>
+                                    </div>
+                                </div>
+                                <span class="time">发布时间：2019-2-1</span>
+                            </li>
+                        </ul>
+                        <!-- 分页 -->
+                        <div class="customBootstrap customBootstrap1">
+                            <div class="customBootstrap-relvaer">
+                                <p>共100条</p>
+                                <ul id="paging-id" class="pagination"></ul>
+                                <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="allread-title-mains">
+                        <li class="tilte-li" id="allread-detail-one-id">
+                            <div class="unread-top">
+                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                            <p class="time-unread">发布时间：2019-2-1</p>
+                            </div>
+                            <img src="../img/x.png" alt="" class="delet-unread">
+                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈
+                            </p>
+                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                        </li>
+                        <li class="tilte-li"  id="allread-detail-two-id">
+                            <div class="unread-top">
+                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                            <p class="time-unread">发布时间：2019-2-1</p>
+                            </div>
+                            <img src="../img/x.png" alt="" class="delet-unread">
+                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈
+                            </p>
+                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                        </li>
+                        <li class="tilte-li"  id="allread-detail-three-id">
+                            <div class="unread-top">
+                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                            <p class="time-unread">发布时间：2019-2-1</p>
+                            </div>
+                            <img src="../img/x.png" alt="" class="delet-unread">
+                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈
+                            </p>
+                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                        </li>
+                        <li  class="tilte-li" id="allread-detail-four-id">
+                            <div class="unread-top">
+                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                            <p class="time-unread">发布时间：2019-2-1</p>
+                            </div>
+                            <img src="../img/x.png" alt="" class="delet-unread">
+                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                加工圈加工圈加工圈加工圈加工圈加工圈
+                            </p>
+                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/jqPaginator.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/schedule.js"></script>
+    <script src="./task-management.js"></script>
+</body>
+
+</html>

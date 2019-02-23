@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API管理</title>
+    <link rel="stylesheet" href="../css/cssreset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="./new-general.css">
+</head>
+
+<body>
+    <img src="../img/background.png" class="all-background" alt="">
+    <div class="head">
+        <img src="../img/logo.png" alt="" class="logoimg">
+        <div class="headright">
+            <ul class="headrigth-top">
+                <li class="nice"><img src="../img/me.png" alt=""> 昵称</li>
+                <li><a href="../modification_password/modification.html"><img src="../img/change-password.png" alt=""> 修改密码</a> </li>
+                <li class="accout"><img src="../img/money.png" alt=""> 账户余额</li>
+                <li><a href="../user-setting/user-setting.html"><img src="../img/set.png" alt=""> 设置</a> </li>
+                <li class="meg-click"><a href="../message/message.html"><img src="../img/information.png" alt="">
+                        消息中心</a></li>
+                <li><img src="../img/quit.png" alt=""> 退出</li>
+            </ul>
+            <div class="headright-bot">
+                <span class="system-ancement">系统公告: xxxxxxxxxxxx</span>
+                <a class="addbuton" href="../task-management/task-management.html"><span>+添加任务</span></a>
+            </div>
+             <!-- 信息下拉 -->
+             <div class="meg-pop-up">
+                <p class="standing-p">站内消息通知</p>
+                <ul class="message-u">
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                    <li>
+                        <p class="one-p">【加工圈】2019年xxxxxx</p>
+                        <p class="two-p">2019-01-12 15：23</p>
+                    </li>
+                </ul>
+                <a href="" class="more-a">查看更多</a>
+            </div>
+             <!-- 昵称下的下拉 -->
+             <div class="userset-namerenbox">
+                <p class="kailong"></p>
+                <ul>
+                    <li>实名认证</li>
+                    <li>用户设置</li>
+                </ul>
+            </div>
+            <!-- 账户余额 -->
+            <div class="accout-box">
+                <div class="account-balance">
+                    <p class="kailong"></p>
+                    <div>
+                        <p>余额: <span>200云</span> </p>
+                        <p>测币余额: <span>500 <img src="../img/money.png" alt=""></span></p>
+                    </div>
+                    <button class="inter-cz">在线充值</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="maincontent">
+        <div class="contenleft">
+            <div class="monpoints">
+                <img src="../img/set.png" alt="" class="montimg">
+                <span class="gneral">监控点概况</span>
+            </div>
+            <hr class="linehr">
+            <p class="report reporte8">监控报告</p>
+        </div>
+        <div class="contentright">
+            <div class="conright-top">
+                <ul class="conright-nav">
+                    <li class="backless">
+                        <a class="gaik" href="../new-general/new-general.html"><img src="../img/survey.png"
+                                alt="">概况</a>
+                    </li>
+                    <li><a href="../task-management/task-management.html"><img src="../img/mission.png" alt="">任务管理</a>
+                    </li>
+                    <li><a href="../call-the-police/call-the-police.html"><img src="../img/police.png" alt="">报警管理</a>
+                    </li>
+                    <li><a href="../API-police/API-police.html"><img src="../img/API.png" alt="">API管理</a></li>
+                    <li><a href="../self-built-police/self-built-police.html"><img src="../img/business.png"
+                                alt="">自建监控点管理</a></li>
+                    <li><a href="../managenment-police/managenment-police.html"><img src="../img/finance.png"
+                                alt="">财务管理</a></li>
+                </ul>
+            </div>
+            <div class="cetnen-prot">
+                <p class="nav">设置>>监控点概况</p>
+                <p class="help-name"><span></span>最新监控报告警</p>
+                <div class="mon-box">
+                    <ul class="mon-contents">
+                        <li>
+                            <span class="yuanblue"></span>
+                            <span class="text-span">监控地址【www.baidu.com:80】与20119-01-20
+                                10：44：06触发警告原因：检测发现异常，触发时机告警</span>
+                        </li>
+                        <li>
+                            <span class="yuanblue"></span>
+                            <span class="text-span">监控地址【www.baidu.com:80】与20119-01-20
+                                10：44：06触发警告原因：检测发现异常，触发时机告警</span>
+                        </li>
+                        <li>
+                            <span class="yuanblue"></span>
+                            <span class="text-span">监控地址【www.baidu.com:80】与20119-01-20
+                                10：44：06触发警告原因：检测发现异常，触发时机告警</span>
+                        </li>
+                    </ul>
+                    <div class="fenye-li">                        
+                        <!-- 分页 -->
+                        <div class="customBootstrap">
+                            <div class="customBootstrap-relvaer">
+                                <p>共100条</p>
+                                <ul id="lists-paing1" class="pagination"></ul>
+                                <p class="page-p">前往 <input class="get-page get-page1" type="number"> 页</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="help-name statis"><span></span>API使用统计</p>
+                    <ul class="detail-title">
+                        <li>监控ID</li>
+                        <li>监控URL</li>
+                        <li>监控时间</li>
+                        <li>接口请求类型</li>
+                        <li>接口次数</li>
+                    </ul>
+                    <ul class="fox-d">
+                        <li class="invoice-lis">
+                            <ul class="lis-li">
+                                <li>1234</li>
+                                <li>www.123.com</li>
+                                <li>2019-1-2</li>
+                                <li>-</li>
+                                <li>10</li>
+                            </ul>
+                        </li>
+                        <li class="invoice-lis">
+                            <ul class="lis-li">
+                                <li>1234</li>
+                                <li>www.123.com</li>
+                                <li>2019-1-2</li>
+                                <li>-</li>
+                                <li>10</li>
+                            </ul>
+                        </li>
+                        <li class="invoice-lis">
+                            <ul class="lis-li">
+                                <li>1234</li>
+                                <li>www.123.com</li>
+                                <li>2019-1-2</li>
+                                <li>-</li>
+                                <li>10</li>
+                            </ul>
+                        </li>
+                        <li class="invoice-lis">
+                            <ul class="lis-li">
+                                <li>1234</li>
+                                <li>www.123.com</li>
+                                <li>2019-1-2</li>
+                                <li>-</li>
+                                <li>10</li>
+                            </ul>
+                        </li>
+                        <li class="invoice-lis">
+                            <ul class="lis-li">
+                                <li>1234</li>
+                                <li>www.123.com</li>
+                                <li>2019-1-2</li>
+                                <li>-</li>
+                                <li>10</li>
+                            </ul>
+                        </li>
+                        <li class="invoice-lis">
+                            <ul class="lis-li">
+                                <li>1234</li>
+                                <li>www.123.com</li>
+                                <li>2019-1-2</li>
+                                <li>-</li>
+                                <li>10</li>
+                            </ul>
+                        </li>
+                        <li class="invoice-lis">
+                            <ul class="lis-li">
+                                <li>1234</li>
+                                <li>www.123.com</li>
+                                <li>2019-1-2</li>
+                                <li>-</li>
+                                <li>10</li>
+                            </ul>
+                        </li>
+                        <li class="invoice-lis">
+                            <ul class="lis-li">
+                                <li>1234</li>
+                                <li>www.123.com</li>
+                                <li>2019-1-2</li>
+                                <li>-</li>
+                                <li>10</li>
+                            </ul>
+                        </li>
+                        <li class="invoice-lis">
+                            <ul class="lis-li">
+                                <li>1234</li>
+                                <li>www.123.com</li>
+                                <li>2019-1-2</li>
+                                <li>-</li>
+                                <li>10</li>
+                            </ul>
+                        </li>
+                        <li class="invoice-lis">
+                            <ul class="lis-li">
+                                <li>1234</li>
+                                <li>www.123.com</li>
+                                <li>2019-1-2</li>
+                                <li>-</li>
+                                <li>10</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="lists-paing" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page get-page4" type="number"> 页</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- 公告弹框 -->
+     <div class="ancement-play-box">
+        <div class="play-inbox">
+            <div class="play-left-nav">
+                <ul>
+                    <li class="skyblue-color" id="new-play"><img src="../img/newest-full.png" alt=""> 最新公告</li>
+                    <li id="noread-play"><img src="../img/unread.png" class="play-img" alt="">未读公告</li>
+                    <li id="has-play"><img src="../img/read.png" class="play-img"  alt="">已读公告</li>
+                    <li id="all-play"><img src="../img/all.png" class="play-img"  alt="">所有系统公告</li>
+                </ul>
+            </div>
+            <ul class="play-right">
+                <!-- 最新公告 -->
+                <li class="hides showbox" id="new-play-id">
+                    <p class="popup-namey">标题内容</p>
+                    <p class="time">发布时间：2019-2-1</p>
+                    <img src="../img/x.png" alt="" class="delet">
+                    <p class="content">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈
+                    </p>
+                </li>
+            <!-- 未读公告 -->
+            <li class="hides" id="noread-play-id">
+                <div class="noread-div">
+                    <ul class="noread-ul">
+                        <li class="noread-lis" id="detail-one">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="detail-two">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="detail-three">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="detail-four">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap customBootstrap1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging-id" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="title-mains">
+                    <li class="tilte-li" id="detail-one-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="detail-two-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="detail-three-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li  class="tilte-li" id="detail-four-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                </ul>
+            </li>
+            <!-- 已读 -->
+            <li class="hides" id="has-play-id">
+                <div class="hasread-div">
+                    <ul class="noread-ul">
+                        <li class="noread-lis" id="has-detail-one">
+                            <div class="lis-box">
+                                <img src="../img/envelope.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="has-detail-two">
+                            <div class="lis-box">
+                                <img src="../img/envelope.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="has-detail-three">
+                            <div class="lis-box">
+                                <img src="../img/envelope.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="has-detail-four">
+                            <div class="lis-box">
+                                <img src="../img/envelope.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap customBootstrap1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging-id" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                        </div>
+                    </div>
+                 </div>
+                <ul class="hasread-title-mains">
+                    <li class="tilte-li" id="has-detail-one-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="has-detail-two-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="has-detail-three-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li  class="tilte-li" id="has-detail-four-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                </ul>
+    
+            </li>
+            <!-- 所有 -->
+            <li class="hides" id="all-play-id">
+                <div class="allread-div">
+                    <ul class="noread-ul">
+                        <li class="noread-lis" id="allread-detail-one">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="allread-detail-two">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="allread-detail-three">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                        <li class="noread-lis" id="allread-detail-four">
+                            <div class="lis-box">
+                                <img src="../img/envelope-un.png" alt="">
+                                <div class="right">
+                                    <p class="popup-title">标题内容</p>
+                                    <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                        加工圈加工圈加工圈加工圈
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="time">发布时间：2019-2-1</span>
+                        </li>
+                    </ul>
+                    <!-- 分页 -->
+                    <div class="customBootstrap customBootstrap1">
+                        <div class="customBootstrap-relvaer">
+                            <p>共100条</p>
+                            <ul id="paging-id" class="pagination"></ul>
+                            <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="allread-title-mains">
+                    <li class="tilte-li" id="allread-detail-one-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="allread-detail-two-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li class="tilte-li"  id="allread-detail-three-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                    <li  class="tilte-li" id="allread-detail-four-id">
+                        <div class="unread-top">
+                        <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
+                        <p class="time-unread">发布时间：2019-2-1</p>
+                        </div>
+                        <img src="../img/x.png" alt="" class="delet-unread">
+                        <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                            加工圈加工圈加工圈加工圈加工圈加工圈
+                        </p>
+                        <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                    </li>
+                </ul>
+            </li>
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jqPaginator.js"></script>
+    <script src="./new-general.js"></script>
+</body>
+
+</html>
