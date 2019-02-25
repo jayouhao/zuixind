@@ -48,12 +48,11 @@ p,span,button,input,div{
 .headrigth-top img{
     margin-right: 5px;
 }
-.headrigth-top li:nth-of-type(6){
+.headrigth-top li:nth-of-type(5){
     margin-right: 0;
 }
-.headrigth-top li:nth-of-type(4) a{
-    color: white;
-    text-decoration: none;
+.headrigth-top li:nth-of-type(4){
+    margin-right: 20px;
 }
 .headright-bot{
     float: left;
@@ -70,6 +69,18 @@ p,span,button,input,div{
 .backless{
     background: white;
     padding: 0 10px 4px;
+}
+.prompt{
+    background: red;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 10px;
+    padding: 1px 4px;
+    position: relative;
+    top: -2px;
+}
+.prompt-top{
+    top: -12px;
 }
 .addbuton{
     background: #FEB500;
@@ -206,7 +217,7 @@ p,span,button,input,div{
 }
 
 /* 充值弹出框 */
-.popup-recharge{
+.popup-recharge,.cz-topup{
     position: fixed;
     top: 0;
     left: 0;
@@ -226,6 +237,10 @@ p,span,button,input,div{
     margin-left: -450px;
     box-shadow: 0 0 2px #fff;
     cursor: default;
+}
+.cz-topup .popup-box{
+    height: 402px;
+    margin-top: -201px;
 }
 .popup-name{
     font-size: 34px;
@@ -304,15 +319,6 @@ input{
     background: #D2D2D2;
 }
 /* end */
-.popup-recharge{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;    
-    /* display: none; */
-    z-index: 3;
-}
 .check-background{
     position: fixed;
     top: 0;
@@ -592,7 +598,9 @@ label{
 .customBootstrap {
     padding-left: 100px;
 }
-
+.general-value{
+    display: none;
+}
 .general-value,
 .general-api,
 .node-show{
@@ -1262,14 +1270,14 @@ input[type="number"]{
 }
 .accout-box{
     display: none;
-}
-.account-balance{
     width: 250px;
     height: 82px;
-    background: black;
     position: absolute;
     left: 96px;
     top: 40px;
+}
+.account-balance{
+    background: black;
     padding: 15px 10px;
     display: flex;
     justify-content: space-between;
@@ -1306,4 +1314,8 @@ input[type="number"]{
     text-align: center;
     line-height: 25px;
     margin-top: 15px;
+}
+.ancement-play-box input[type=number]{
+    padding: 0;
+    font-size: 15px;
 }

@@ -51,6 +51,54 @@ $(function () {
             console.log("你选择的=>", n, "页");
         }
     });
+    //分页
+    $('#paging3').jqPaginator({
+        //总页数
+        totalPages: 100,
+        //显示多少个页码
+        visiblePages: 1,
+        //当前页
+        currentPage: 1,
+        prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i><<\/a><\/li>',
+        next: '<li class="next"><a href="javascript:void(0);">><i class="arrow arrow3"><\/i><\/a><\/li>',
+        page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+        onPageChange: function (n) {
+            $("#demo2-text").html("当前第" + n + "页");
+            console.log("你选择的=>", n, "页");
+        }
+    });
+    //分页
+    $('#paging4').jqPaginator({
+        //总页数
+        totalPages: 100,
+        //显示多少个页码
+        visiblePages: 1,
+        //当前页
+        currentPage: 1,
+        prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i><<\/a><\/li>',
+        next: '<li class="next"><a href="javascript:void(0);">><i class="arrow arrow3"><\/i><\/a><\/li>',
+        page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+        onPageChange: function (n) {
+            $("#demo2-text").html("当前第" + n + "页");
+            console.log("你选择的=>", n, "页");
+        }
+    });
+    //分页
+    $('#paging5').jqPaginator({
+        //总页数
+        totalPages: 100,
+        //显示多少个页码
+        visiblePages: 1,
+        //当前页
+        currentPage: 1,
+        prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i><<\/a><\/li>',
+        next: '<li class="next"><a href="javascript:void(0);">><i class="arrow arrow3"><\/i><\/a><\/li>',
+        page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+        onPageChange: function (n) {
+            $("#demo2-text").html("当前第" + n + "页");
+            console.log("你选择的=>", n, "页");
+        }
+    });
 
     //输入分页的
     document.onkeydown = function (event) {
@@ -119,6 +167,63 @@ $(function () {
                 }
             }
 
+            var num3 = $(".get-page3").val();
+            if (num3) {
+                $('#paging3').jqPaginator({
+                    //总页数
+                    totalPages: 100,
+                    //显示多少个页码
+                    visiblePages: 1,
+                    //当前页
+                    currentPage: Number(num3),
+                    prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i><<\/a><\/li>',
+                    next: '<li class="next"><a href="javascript:void(0);">><i class="arrow arrow3"><\/i><\/a><\/li>',
+                    page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+                    onPageChange: function (n) {
+                        $("#demo2-text").html("当前第" + n + "页");
+                        console.log("你选择的=>", n, "页");
+                    }
+                });
+                $(".get-page3").val("");
+            }
+            var num4 = $(".get-page4").val();
+            if (num4) {
+                $('#paging4').jqPaginator({
+                    //总页数
+                    totalPages: 100,
+                    //显示多少个页码
+                    visiblePages: 1,
+                    //当前页
+                    currentPage: Number(num4),
+                    prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i><<\/a><\/li>',
+                    next: '<li class="next"><a href="javascript:void(0);">><i class="arrow arrow3"><\/i><\/a><\/li>',
+                    page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+                    onPageChange: function (n) {
+                        $("#demo2-text").html("当前第" + n + "页");
+                        console.log("你选择的=>", n, "页");
+                    }
+                });
+                $(".get-page4").val("");
+            }
+            var num5 = $(".get-page5").val();
+            if (num5) {
+                $('#paging5').jqPaginator({
+                    //总页数
+                    totalPages: 100,
+                    //显示多少个页码
+                    visiblePages: 1,
+                    //当前页
+                    currentPage: Number(num5),
+                    prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i><<\/a><\/li>',
+                    next: '<li class="next"><a href="javascript:void(0);">><i class="arrow arrow3"><\/i><\/a><\/li>',
+                    page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+                    onPageChange: function (n) {
+                        $("#demo2-text").html("当前第" + n + "页");
+                        console.log("你选择的=>", n, "页");
+                    }
+                });
+                $(".get-page5").val("");
+            }
         }
     }
 
@@ -203,101 +308,103 @@ $(function () {
     })
 
     //充值
-    $(".recharge-button").click(function () {
-        $(".popup-recharge").css({ display: "block" });
-    });
-
+    $('.recharge-box .recharge-button').click(function(){
+        $('.cz-topup').show();
+    })
 
     // 转换器
-    $('.arrows input').keyup(function(){
-        var a=Number($(this).val());
-        $('.blue').text(a*100);
+    $('.arrows input').keyup(function () {
+        var a = Number($(this).val());
+        $('.blue').text(a * 100);
     })
 
 
     // 系統公告顯示
-    $('.headright-bot .system-ancement').click(function(){
+    $('.headright-bot .system-ancement').click(function () {
         $('.ancement-play-box').show();
     })
 
-    $('.play-right .delet,.delet-unread').click(function(){
+    $('.play-right .delet,.delet-unread').click(function () {
         $('.ancement-play-box').hide();
     })
 
     // 公告左边导航切换
-    $('.play-left-nav li').click(function(){
+    $('.play-left-nav li').click(function () {
         $(this).addClass('skyblue-color').siblings().removeClass('skyblue-color');
-       var a= $(this).attr('id');
-       $('#'+a+'-'+'id').show().siblings().hide();
+        var a = $(this).attr('id');
+        $('#' + a + '-' + 'id').show().siblings().hide();
     })
 
 
     // 未读公告内容详情
-    $('.noread-div li').click(function(){
+    $('.noread-div li').click(function () {
         $(this).parents('.noread-div').hide();
-        var a=$(this).attr('id');
+        var a = $(this).attr('id');
         $('.title-mains').show();
-        $('#'+a+'-'+'id').show().siblings().hide();
+        $('#' + a + '-' + 'id').show().siblings().hide();
     })
 
 
-    $('.title-mains .return').click(function(){
+    $('.title-mains .return').click(function () {
         $(this).parents('.tilte-li').hide().parents().siblings('.noread-div').show();
     })
 
 
     // 已读公告内容详情
-    $('.hasread-div li').click(function(){
+    $('.hasread-div li').click(function () {
         $(this).parents('.hasread-div').hide();
-        var a=$(this).attr('id');
+        var a = $(this).attr('id');
         $('.hasread-title-mains').show();
-        $('#'+a+'-'+'id').show().siblings().hide();
+        $('#' + a + '-' + 'id').show().siblings().hide();
     })
 
 
-    $('.hasread-title-mains .return').click(function(){
+    $('.hasread-title-mains .return').click(function () {
         $(this).parents('.tilte-li').hide().parents().siblings('.hasread-div').show();
     })
 
 
     // 所有公告内容详情
-    $('.allread-div li').click(function(){
+    $('.allread-div li').click(function () {
         $(this).parents('.allread-div').hide();
-        var a=$(this).attr('id');
+        var a = $(this).attr('id');
         $('.allread-title-mains').show();
-        $('#'+a+'-'+'id').show().siblings().hide();
+        $('#' + a + '-' + 'id').show().siblings().hide();
     })
 
 
-    $('.allread-title-mains .return').click(function(){
+    $('.allread-title-mains .return').click(function () {
         $(this).parents('.tilte-li').hide().parents().siblings('.allread-div').show();
     })
 
 
+    
      // 点击消息中心切换
      $('.meg-click').mouseenter(function () {
-        if( $('.meg-pop-up').css('display')=='block'){
-            $('.meg-pop-up').slideUp();
-        }else{
-            $('.meg-pop-up').slideDown();
-        }
+        $('.meg-pop-up').slideDown();
+        $('.userset-namerenbox,.accout-box').slideUp();
     });
     $('.meg-pop-up').mouseleave(function () {
-        if( $('.meg-pop-up').css('display')=='block'){
             $('.meg-pop-up').slideUp();
-        }else{
-            $('.meg-pop-up').slideDown();
-        }
+    });
+        
+
+    // 昵称
+    $('.nice').mouseenter(function(){
+        $('.userset-namerenbox').slideDown();
+        $('.meg-pop-up,.accout-box').slideUp();
     });
 
-
-     // 昵称
-     $('.nice').click(function(){
-        $('.userset-namerenbox').toggle();
-    })
+    $('.userset-namerenbox').mouseleave(function(){
+        $('.userset-namerenbox').slideUp();
+    });
 
     // 账户余额
-    $('.accout').click(function(){
-        $('.accout-box').toggle();
-    })
+    $('.accout').mouseenter(function(){
+        $('.accout-box').slideDown();
+        $('.userset-namerenbox,.meg-pop-up').slideUp();
+    });
+    $('.accout-box').mouseleave(function(){
+        $('.accout-box').slideUp();
+    });
 })

@@ -18,10 +18,10 @@
         <div class="headright">
             <ul class="headrigth-top">
                 <li class="nice"><img src="../img/me.png" alt=""> 昵称</li>
-                <li><a href="../forget_password/forget.html"><img src="../img/change-password.png" alt=""> 修改密码</a></li>
+                <!-- <li><a href="../forget_password/forget.html"><img src="../img/change-password.png" alt=""> 修改密码</a></li> -->
                 <li class="accout"><img src="../img/money.png" alt=""> 账户余额</li>
                 <li><a href="../user-setting/user-setting.html"><img src="../img/set.png" alt="">设置</a></li>
-                <li class="meg-click"><a href="../message/message.html"><img src="../img/information.png" alt=""> 消息中心</a></li>
+                <li class="meg-click"><a href="../message/message.html"><img src="../img/information.png" alt="">消息中心<span class="prompt prompt-top">99+</span></a></li>
                 <li><img src="../img/quit.png" alt=""> 退出</li>
             </ul>
             <div class="headright-bot">
@@ -867,30 +867,31 @@
             <img class="remove-x" src="../img/x.png" alt="">
         </div>
     </div>
+
     <!-- 公告弹框 -->
     <div class="ancement-play-box">
-            <div class="play-inbox">
-                <div class="play-left-nav">
-                    <ul>
-                        <li class="skyblue-color" id="new-play"><img src="../img/newest-full.png" alt=""> 最新公告</li>
-                        <li id="noread-play"><img src="../img/unread.png" class="play-img" alt="">未读公告</li>
-                        <li id="has-play"><img src="../img/read.png" class="play-img"  alt="">已读公告</li>
-                        <li id="all-play"><img src="../img/all.png" class="play-img"  alt="">所有系统公告</li>
-                    </ul>
-                </div>
-                <ul class="play-right">
-                    <!-- 最新公告 -->
-                    <li class="hides showbox" id="new-play-id">
-                        <p class="popup-namey">标题内容</p>
-                        <p class="time">发布时间：2019-2-1</p>
-                        <img src="../img/x.png" alt="" class="delet">
-                        <p class="content">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                            加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                            加工圈加工圈加工圈加工圈加工圈加工圈
-                        </p>
-                    </li>
+        <div class="play-inbox">
+            <div class="play-left-nav">
+                <ul>
+                    <li class="skyblue-color" id="new-play"><img src="../img/newest-full.png" alt=""> 最新公告</li>
+                    <li id="noread-play"><img src="../img/unread.png" class="play-img" alt="">未读公告</li>
+                    <li id="has-play"><img src="../img/read.png" class="play-img" alt="">已读公告</li>
+                    <li id="all-play"><img src="../img/all.png" class="play-img" alt="">所有系统公告</li>
+                </ul>
+            </div>
+            <ul class="play-right">
+                <!-- 最新公告 -->
+                <li class="hides showbox" id="new-play-id">
+                    <p class="popup-name">标题内容</p>
+                    <p class="time">发布时间：2019-2-1</p>
+                    <img src="../img/x.png" alt="" class="delet">
+                    <p class="content">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                        加工圈加工圈加工圈加工圈加工圈加工圈
+                    </p>
+                </li>
                 <!-- 未读公告 -->
                 <li class="hides" id="noread-play-id">
                     <div class="noread-div">
@@ -948,16 +949,16 @@
                         <div class="customBootstrap customBootstrap1">
                             <div class="customBootstrap-relvaer">
                                 <p>共100条</p>
-                                <ul id="paging-id" class="pagination"></ul>
-                                <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                                <ul id="paging3" class="pagination"></ul>
+                                <p class="page-p">前往 <input class="get-page get-page3" type="number"> 页</p>
                             </div>
                         </div>
                     </div>
                     <ul class="title-mains">
                         <li class="tilte-li" id="detail-one-id">
                             <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
+                                <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                <p class="time-unread">发布时间：2019-2-1</p>
                             </div>
                             <img src="../img/x.png" alt="" class="delet-unread">
                             <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -968,10 +969,10 @@
                             </p>
                             <button type="button" class="return">返&nbsp;&nbsp;回</button>
                         </li>
-                        <li class="tilte-li"  id="detail-two-id">
+                        <li class="tilte-li" id="detail-two-id">
                             <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
+                                <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                <p class="time-unread">发布时间：2019-2-1</p>
                             </div>
                             <img src="../img/x.png" alt="" class="delet-unread">
                             <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -982,10 +983,10 @@
                             </p>
                             <button type="button" class="return">返&nbsp;&nbsp;回</button>
                         </li>
-                        <li class="tilte-li"  id="detail-three-id">
+                        <li class="tilte-li" id="detail-three-id">
                             <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
+                                <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                <p class="time-unread">发布时间：2019-2-1</p>
                             </div>
                             <img src="../img/x.png" alt="" class="delet-unread">
                             <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -996,10 +997,10 @@
                             </p>
                             <button type="button" class="return">返&nbsp;&nbsp;回</button>
                         </li>
-                        <li  class="tilte-li" id="detail-four-id">
+                        <li class="tilte-li" id="detail-four-id">
                             <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
+                                <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                <p class="time-unread">发布时间：2019-2-1</p>
                             </div>
                             <img src="../img/x.png" alt="" class="delet-unread">
                             <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -1069,16 +1070,16 @@
                         <div class="customBootstrap customBootstrap1">
                             <div class="customBootstrap-relvaer">
                                 <p>共100条</p>
-                                <ul id="paging-id" class="pagination"></ul>
-                                <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                                <ul id="paging4" class="pagination"></ul>
+                                <p class="page-p">前往 <input class="get-page get-page4" type="number"> 页</p>
                             </div>
                         </div>
-                     </div>
+                    </div>
                     <ul class="hasread-title-mains">
                         <li class="tilte-li" id="has-detail-one-id">
                             <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
+                                <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                <p class="time-unread">发布时间：2019-2-1</p>
                             </div>
                             <img src="../img/x.png" alt="" class="delet-unread">
                             <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -1089,10 +1090,10 @@
                             </p>
                             <button type="button" class="return">返&nbsp;&nbsp;回</button>
                         </li>
-                        <li class="tilte-li"  id="has-detail-two-id">
+                        <li class="tilte-li" id="has-detail-two-id">
                             <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
+                                <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                <p class="time-unread">发布时间：2019-2-1</p>
                             </div>
                             <img src="../img/x.png" alt="" class="delet-unread">
                             <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -1103,10 +1104,10 @@
                             </p>
                             <button type="button" class="return">返&nbsp;&nbsp;回</button>
                         </li>
-                        <li class="tilte-li"  id="has-detail-three-id">
+                        <li class="tilte-li" id="has-detail-three-id">
                             <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
+                                <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                <p class="time-unread">发布时间：2019-2-1</p>
                             </div>
                             <img src="../img/x.png" alt="" class="delet-unread">
                             <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -1117,10 +1118,10 @@
                             </p>
                             <button type="button" class="return">返&nbsp;&nbsp;回</button>
                         </li>
-                        <li  class="tilte-li" id="has-detail-four-id">
+                        <li class="tilte-li" id="has-detail-four-id">
                             <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
+                                <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                <p class="time-unread">发布时间：2019-2-1</p>
                             </div>
                             <img src="../img/x.png" alt="" class="delet-unread">
                             <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -1132,7 +1133,7 @@
                             <button type="button" class="return">返&nbsp;&nbsp;回</button>
                         </li>
                     </ul>
-        
+
                 </li>
                 <!-- 所有 -->
                 <li class="hides" id="all-play-id">
@@ -1191,16 +1192,16 @@
                         <div class="customBootstrap customBootstrap1">
                             <div class="customBootstrap-relvaer">
                                 <p>共100条</p>
-                                <ul id="paging-id" class="pagination"></ul>
-                                <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                                <ul id="paging5" class="pagination"></ul>
+                                <p class="page-p">前往 <input class="get-page get-page5" type="number"> 页</p>
                             </div>
                         </div>
                     </div>
                     <ul class="allread-title-mains">
                         <li class="tilte-li" id="allread-detail-one-id">
                             <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
+                                <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                <p class="time-unread">发布时间：2019-2-1</p>
                             </div>
                             <img src="../img/x.png" alt="" class="delet-unread">
                             <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -1211,10 +1212,10 @@
                             </p>
                             <button type="button" class="return">返&nbsp;&nbsp;回</button>
                         </li>
-                        <li class="tilte-li"  id="allread-detail-two-id">
+                        <li class="tilte-li" id="allread-detail-two-id">
                             <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
+                                <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                <p class="time-unread">发布时间：2019-2-1</p>
                             </div>
                             <img src="../img/x.png" alt="" class="delet-unread">
                             <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -1225,10 +1226,10 @@
                             </p>
                             <button type="button" class="return">返&nbsp;&nbsp;回</button>
                         </li>
-                        <li class="tilte-li"  id="allread-detail-three-id">
+                        <li class="tilte-li" id="allread-detail-three-id">
                             <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
+                                <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                <p class="time-unread">发布时间：2019-2-1</p>
                             </div>
                             <img src="../img/x.png" alt="" class="delet-unread">
                             <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -1239,10 +1240,10 @@
                             </p>
                             <button type="button" class="return">返&nbsp;&nbsp;回</button>
                         </li>
-                        <li  class="tilte-li" id="allread-detail-four-id">
+                        <li class="tilte-li" id="allread-detail-four-id">
                             <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
+                                <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                <p class="time-unread">发布时间：2019-2-1</p>
                             </div>
                             <img src="../img/x.png" alt="" class="delet-unread">
                             <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -1255,7 +1256,7 @@
                         </li>
                     </ul>
                 </li>
-            </div>
+        </div>
     </div>
     <script src="../js/jquery-3.1.1.min.js"></script>
     <script src="../js/jqPaginator.js"></script>

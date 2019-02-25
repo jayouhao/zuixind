@@ -19,17 +19,17 @@
         <div class="headright">
             <ul class="headrigth-top">
                 <li class="nice"><img src="../img/me.png" alt=""> 昵称</li>
-                <li><a href="../forget_password/forget.html"><img src="../img/change-password.png" alt=""> 修改密码</a></li>
+                <!-- <li><a href="../forget_password/forget.html"><img src="../img/change-password.png" alt=""> 修改密码</a></li> -->
                 <li class="accout"><img src="../img/money.png" alt=""> 账户余额</li>
                 <li><a href="../user-setting/user-setting.html"><img src="../img/set.png" alt="">设置</a></li>
-                <li class="meg-click"><a href="../message/message.html"><img src="../img/information.png" alt=""> 消息中心</a></li>
+                <li class="meg-click"><a href="../message/message.html"><img src="../img/information.png" alt="">消息中心<span class="prompt prompt-top">99+</span></a></li>
                 <li><img src="../img/quit.png" alt=""> 退出</li>
             </ul>
             <div class="headright-bot">
                 <span class="system-ancement">系统公告: xxxxxxxxxxxx</span>
-               <a class="addbuton" href="../task-management/task-management.html"><span>+添加任务</span></a> 
+                <a class="addbuton" href="../task-management/task-management.html"><span>+添加任务</span></a>
             </div>
-              <!-- 信息下拉 -->
+            <!-- 信息下拉 -->
             <div class="meg-pop-up">
                 <p class="standing-p">站内消息通知</p>
                 <ul class="message-u">
@@ -52,8 +52,8 @@
                 </ul>
                 <a href="" class="more-a">查看更多</a>
             </div>
-               <!-- 昵称下的下拉 -->
-               <div class="userset-namerenbox">
+            <!-- 昵称下的下拉 -->
+            <div class="userset-namerenbox">
                 <p class="kailong"></p>
                 <ul>
                     <li>实名认证</li>
@@ -194,7 +194,7 @@
                                 </div>
                                 <img src="../img/arrows.png" alt="" class="arrows">
                                 <div class="tranvervlaue">
-                                    <input type="number" disabled class="cemoneys" value="100"/><span> 测币</span>
+                                    <input type="number" disabled class="cemoneys" value="100" /><span> 测币</span>
                                 </div>
                             </div>
                             <div class="transright">
@@ -203,29 +203,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- 充值弹出框 -->
-                    <div class="popup-recharge">
-                        <div class="popup-box">
-                            <p class="popup-name">充值页面</p>
-                            <p class="popup-number"><span>订单号:</span>12312313132</p>
-                            <p class="method">
-                                <span>充值方式:</span>
-                                <img src="../img/wechat.png" class="method-img" alt="">
-                                <img src="../img/alipay.png" class="method-img" alt="">
-                                <img src="../img/bank_card.png" class="method-img" alt="">
-                            </p>
-                            <p class="popup-money">
-                                <span>充值金额:</span>
-                                <input type="number" class="topup">
-                                <span class="yuan1">元</span>
-                                <span class="reds">备注：充值金额不得小于50元</span>
-                            </p>
-                            <p class="popup-button">
-                                <button type="button">确定充值</button>
-                                <button type="button" class="canel">取消充值</button>
-                            </p>
-                        </div>
-                    </div>
+                   
                 </li>
                 <!-- 订单管理 -->
                 <li class="linone older" id="older-id">
@@ -426,77 +404,7 @@
                             <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
                         </div>
                     </div>
-                    <!-- 收支明细弹出框 -->
-                    <div class="popup-recharge">
-                        <div class="popup-box payment-box">
-                            <p class="popup-name">收支明细导出</p>
-                            <span class="delet-x">X</span>
-                            <div class="leitype pay-type">
-                                交易类型<span class="maohao">:</span>
-                                <button type="button" class="btn btn-default dropdown-toggle pay-button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <label class="select select-type-d"></label>
-                                    <span class="caret"></span>
-                                </button>
-                            </div>
-                            <ul class="dropdown-menu mes-typecli-d">
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <label class="select">全部</label>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <label class="select">监控消耗</label>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <label class="select">普通充值</label>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="javascript:void(0)">
-                                        <label class="select">API消耗</label>
-                                    </a>
-                                </li>
-                            </ul>
-                            <div class="start-end-time">
-                                <div class="startime payment-time">
-                                    <span class="time-g"> 开始时间<span class="maohao">:</span></span>
-                                    <div class="dataxj dataxj-g">
-                                        <img src="../img/reqi.png" alt="" class="reqimg">
-                                        <input type="text" class="datainput payment-g start-time5">
-
-                                        <img class="xkes xkes5" src="../img/x.png" alt="">
-                                        <div id='schedule-box5' class="boxshaw"></div>
-
-                                        <img src="../img/sanzuo.png" alt="" class="leftjian">
-                                        <img src="../img/sanyou.png" alt="" class="rightjian">
-                                    </div>
-                                </div>
-                                <div class="startime payment-time">
-                                    <span class="time-g">至</span>
-                                    <div class="dataxj dataxj-k">
-                                        <img src="../img/reqi.png" alt="" class="reqimg">
-                                        <input type="text" class="datainput payment-g start-time6">
-
-                                        <img class="xkes xkes6" src="../img/x.png" alt="">
-                                        <div id='schedule-box6' class="boxshaw"></div>
-
-                                        <img src="../img/sanzuo.png" alt="" class="leftjian">
-                                        <img src="../img/sanyou.png" alt="" class="rightjian">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="verification">
-                                <span class="ver-span"> 验证码</span><span class="maohao">:</span>
-                                <input type="text" class="ver-input">
-                                <img src="../img/yards.png" alt="">
-                            </div>
-                            <button type="button" class="export-d">确定充值</button>
-                        </div>
-                    </div>
+                   
                 </li>
                 <!-- 发票管理 -->
                 <li class="linone fapolice" id="fapolice-id">
@@ -535,7 +443,7 @@
                         <div class="big-invoicebox" id="invoice-list-id">
                             <div class="contime list-contime">
                                 <div class="startime">
-                                    <span> 开始时间<span class="maohao">:</span></span>                              
+                                    <span> 开始时间<span class="maohao">:</span></span>
                                     <div class="dataxj">
                                         <img src="../img/reqi.png" alt="" class="reqimg">
                                         <input type="text" class="datainput start-time7">
@@ -545,10 +453,10 @@
 
                                         <img src="../img/sanzuo.png" alt="" class="leftjian">
                                         <img src="../img/sanyou.png" alt="" class="rightjian">
-                                    </div>              
+                                    </div>
                                 </div>
                                 <div class="startime">
-                                    <span>结束时间<span class="maohao">:</span></span>               
+                                    <span>结束时间<span class="maohao">:</span></span>
                                     <div class="dataxj">
                                         <img src="../img/reqi.png" alt="" class="reqimg">
                                         <input type="text" class="datainput start-time8">
@@ -558,7 +466,7 @@
 
                                         <img src="../img/sanzuo.png" alt="" class="leftjian">
                                         <img src="../img/sanyou.png" alt="" class="rightjian">
-                                    </div>                                 
+                                    </div>
                                 </div>
                                 <div class="leitype">
                                     开票状态<span class="maohao">:</span>
@@ -773,247 +681,28 @@
                                     </div>
                                 </div>
                             </div>
-                          
-                        </div>
-                    </div>
-                    <!-- 新增收货地址弹出框 -->
-                    <div class="popup-recharge new-adr-box">
-                        <div class="popup-box payment-box">
-                            <p class="popup-name">新增收货地址</p>
-                            <div class="leitype pay-type">
-                                <span>收货人姓名</span> <span class="maohao">:</span>
-                                <input type="text" name="" id="" class="consiname">
-                            </div>
-                            <div class="leitype pay-type">
-                                <span class="phone-number">电话号码</span> <span class="maohao">:</span>
-                                <input type="text" name="" id="" class="consiname">
-                            </div>
-                            <div class="leitype pay-type adr-div">
-                                <span class="f-right">地址</span><span class="maohao">:</span>
-                                <div data-toggle="distpicker" class="select-box">
-                                    <select></select>
-                                    <select></select>
-                                    <select></select>
-                                </div>
-                                <input type="text" class="reg-adr" placeholder="街道">
-                            </div>
-                            <div class="leitype pay-type">
-                                <span class="f-right">邮编</span><span class="maohao">:</span>
-                                <input type="text" name="" id="" class="consiname" value="">
-                            </div>
-                            <input type="checkbox" checked="true" name="" id="" class="dagou">设为默认地址
-                            <p class="popup-button">
-                                <button type="button">确定</button>
-                                <button type="button" class="canel">取消</button>
-                            </p>
-                        </div>
-                    </div>
 
-                    <!-- 修改收货地址弹出框 -->
-                    <div class="popup-recharge change-adrbox">
-                        <div class="popup-box payment-box">
-                            <p class="popup-name">修改收货地址</p>
-                            <div class="leitype pay-type">
-                                <span>收货人姓名</span> <span class="maohao">:</span>
-                                <input type="text" value="" name="" id="" class="consiname personame">
-                            </div>
-                            <div class="leitype pay-type">
-                                <span class="phone-number">电话号码</span> <span class="maohao">:</span>
-                                <input type="text" name="" id="" class="consiname iphone-num" value="">
-                            </div>
-                            <div class="leitype pay-type change-big">
-                                <span class="f-right">地址</span><span class="maohao">:</span>
-                                <!-- <div data-toggle="distpicker3" class="changes-box">
-                                        <select></select>
-                                        <select></select>
-                                        <select></select>
-                                </div> -->
-                                <div id="distpicker3" class="changes-box">
-                                    <div class="form-group">
-                                        <select class="form-control" id="province6"></select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control" id="city6"></select>
-                                    </div>
-                                    <div class="form-group">
-                                        <select class="form-control" id="district6"></select>
-                                    </div>
-                                </div>
-
-                                <input type="text" class="change-adr" placeholder="街道">
-                            </div>
-                            <div class="leitype pay-type">
-                                <span class="f-right">邮编</span><span class="maohao">:</span>
-                                <input type="text" name="" id="" class="consiname yz-number">
-                            </div>
-                            <input type="checkbox" checked="true" name="" id="" class="dagou">设为默认地址
-                            <p class="popup-button">
-                                <button type="button">确定</button>
-                                <button type="button" class="canel">取消</button>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- 发票退票 -->
-                    <div class="popup-recharge invoice-box-tan">
-                        <div class="check-background"></div>
-                        <div class="popup-box payment-box">
-                            <p class="popup-name">发票退票</p>
-                            <div class="leitype">
-                                <span><i>*</i> 退票原因</span><span class="maohao">:</span>
-                                <button type="button" class="btn btn-default dropdown-toggle consiname"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <label class="select reason-result"></label>
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu refund-reason">
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <label class="select">发票信息错误</label>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <label class="select">发票类型错误</label>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">
-                                            <label class="select">退款</label>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="leitype">
-                                <span class="yun-note"><i>*</i> 备注</span><span class="maohao">:</span>
-                                <input type="text" name="" id="" class="consiname">
-                            </div>
-                            <div class="leitype">
-                                <span class="wliu"><i>*</i> 发票邮寄物流</span><span class="maohao">:</span>
-                                <input type="text" name="" id="" class="consiname">
-                            </div>
-                            <div class="leitype">
-                                <span class="yunumber"><i>*</i> 运单号</span><span class="maohao">:</span>
-                                <input type="text" name="" id="" class="consiname">
-                            </div>
-                            <div class="in-textarea">
-                                <p>邮寄地址<img src="../img/site.png" alt="" class="site"></p>
-                                <p>地址：杭州市余杭区文一西路983号3楼</p>
-                                <p>收件人：加工圈</p>
-                                <p>电话：11111111</p>
-                            </div>
-                            <p class="popup-button">
-                                <button type="button">退票</button>
-                                <button type="button" class="canel">取消</button>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- 导出个人明细 -->
-                    <div class="popup-recharge person-detail">
-                        <div class="check-background"></div>
-                        <div class="popup-box">
-                            <p class="popup-name">到处个人明细</p>
-                            <img src="../img/details.png" alt="" class="detail-img">
-                            <p class="detail-bton">
-                                <button>导&nbsp;&nbsp;出</button>
-                                <button class="detail-return">返&nbsp;&nbsp;回</button>
-                            </p>
-                        </div>
-                    </div>
-                    <!-- 发票列表详情 -->
-                    <div class="popup-recharge lists-detail">
-                        <div class="check-background"></div>
-                        <div class="popup-box lists-box">
-                            <p class="popup-name">发票详情</p>
-                            <ul class="detail-title">
-                                <li>申请时间</li>
-                                <li>发票抬头</li>
-                                <li>发票总额</li>
-                                <li>发票性质</li>
-                                <li>发票状态</li>
-                                <li>备注</li>
-                            </ul>
-                            <ul class="fox-d">
-                                <li class="invoice-lis">
-                                    <ul class="lis-li">
-                                        <li>123456788</li>
-                                        <li>产品名称</li>
-                                        <li>订单</li>
-                                        <li>2019-1-2</li>
-                                        <li>￥2000.00</li>
-                                        <li>￥2000.00</li>
-                                    </ul>
-                                </li>
-                                <li class="invoice-lis">
-                                    <ul class="lis-li">
-                                        <li>2019-1-2</li>
-                                        <li>1</li>
-                                        <li>2</li>
-                                        <li>8</li>
-                                        <li>5</li>
-                                        <li>的说法地方</li>
-                                    </ul>
-                                </li>
-                                <li class="invoice-lis">
-                                    <ul class="lis-li">
-                                        <li>2019-1-2</li>
-                                        <li>1</li>
-                                        <li>2</li>
-                                        <li>8</li>
-                                        <li>5</li>
-                                        <li>的说法地方</li>
-                                    </ul>
-                                </li>
-                                <li class="invoice-lis">
-                                    <ul class="lis-li">
-                                        <li>2019-1-2</li>
-                                        <li>1</li>
-                                        <li>2</li>
-                                        <li>8</li>
-                                        <li>5</li>
-                                        <li>的说法地方</li>
-                                    </ul>
-                                </li>
-                                <li class="invoice-lis">
-                                    <ul class="lis-li">
-                                        <li>2019-1-2</li>
-                                        <li>1</li>
-                                        <li>2</li>
-                                        <li>8</li>
-                                        <li>5</li>
-                                        <li>的说法地方</li>
-                                    </ul>
-                                </li>
-                            </ul>
-                            <!-- 分页 -->
-                            <div class="customBootstrap customBootstrap1">
-                                <div class="customBootstrap-relvaer">
-                                    <p>共100条</p>
-                                    <ul id="lists-paing" class="pagination"></ul>
-                                    <p class="page-p">前往 <input class="get-page get-page4" type="number"> 页</p>
-                                </div>
-                            </div>
-                            <button class="lists-return">返&nbsp;&nbsp;回</button>
                         </div>
                     </div>
                 </li>
             </ul>
         </div>
 
-          <!-- 公告弹框 -->
-    <div class="ancement-play-box">
+        <!-- 公告弹框 -->
+        <div class="popup-recharge ancement-play-box">
             <div class="play-inbox">
                 <div class="play-left-nav">
                     <ul>
                         <li class="skyblue-color" id="new-play"><img src="../img/newest-full.png" alt=""> 最新公告</li>
                         <li id="noread-play"><img src="../img/unread.png" class="play-img" alt="">未读公告</li>
-                        <li id="has-play"><img src="../img/read.png" class="play-img"  alt="">已读公告</li>
-                        <li id="all-play"><img src="../img/all.png" class="play-img"  alt="">所有系统公告</li>
+                        <li id="has-play"><img src="../img/read.png" class="play-img" alt="">已读公告</li>
+                        <li id="all-play"><img src="../img/all.png" class="play-img" alt="">所有系统公告</li>
                     </ul>
                 </div>
                 <ul class="play-right">
                     <!-- 最新公告 -->
                     <li class="hides showbox" id="new-play-id">
-                        <p class="popup-namey">标题内容</p>
+                        <p class="popup-name">标题内容</p>
                         <p class="time">发布时间：2019-2-1</p>
                         <img src="../img/x.png" alt="" class="delet">
                         <p class="content">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
@@ -1023,382 +712,715 @@
                             加工圈加工圈加工圈加工圈加工圈加工圈
                         </p>
                     </li>
-                <!-- 未读公告 -->
-                <li class="hides" id="noread-play-id">
-                    <div class="noread-div">
-                        <ul class="noread-ul">
-                            <li class="noread-lis" id="detail-one">
-                                <div class="lis-box">
-                                    <img src="../img/envelope-un.png" alt="">
-                                    <div class="right">
-                                        <p class="popup-title">标题内容</p>
-                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                            加工圈加工圈加工圈加工圈
-                                        </p>
+                    <!-- 未读公告 -->
+                    <li class="hides" id="noread-play-id">
+                        <div class="noread-div">
+                            <ul class="noread-ul">
+                                <li class="noread-lis" id="detail-one">
+                                    <div class="lis-box">
+                                        <img src="../img/envelope-un.png" alt="">
+                                        <div class="right">
+                                            <p class="popup-title">标题内容</p>
+                                            <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                                加工圈加工圈加工圈加工圈
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <span class="time">发布时间：2019-2-1</span>
-                            </li>
-                            <li class="noread-lis" id="detail-two">
-                                <div class="lis-box">
-                                    <img src="../img/envelope-un.png" alt="">
-                                    <div class="right">
-                                        <p class="popup-title">标题内容</p>
-                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                            加工圈加工圈加工圈加工圈
-                                        </p>
+                                    <span class="time">发布时间：2019-2-1</span>
+                                </li>
+                                <li class="noread-lis" id="detail-two">
+                                    <div class="lis-box">
+                                        <img src="../img/envelope-un.png" alt="">
+                                        <div class="right">
+                                            <p class="popup-title">标题内容</p>
+                                            <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                                加工圈加工圈加工圈加工圈
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <span class="time">发布时间：2019-2-1</span>
-                            </li>
-                            <li class="noread-lis" id="detail-three">
-                                <div class="lis-box">
-                                    <img src="../img/envelope-un.png" alt="">
-                                    <div class="right">
-                                        <p class="popup-title">标题内容</p>
-                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                            加工圈加工圈加工圈加工圈
-                                        </p>
+                                    <span class="time">发布时间：2019-2-1</span>
+                                </li>
+                                <li class="noread-lis" id="detail-three">
+                                    <div class="lis-box">
+                                        <img src="../img/envelope-un.png" alt="">
+                                        <div class="right">
+                                            <p class="popup-title">标题内容</p>
+                                            <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                                加工圈加工圈加工圈加工圈
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                                <span class="time">发布时间：2019-2-1</span>
-                            </li>
-                            <li class="noread-lis" id="detail-four">
-                                <div class="lis-box">
-                                    <img src="../img/envelope-un.png" alt="">
-                                    <div class="right">
-                                        <p class="popup-title">标题内容</p>
-                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                            加工圈加工圈加工圈加工圈
-                                        </p>
+                                    <span class="time">发布时间：2019-2-1</span>
+                                </li>
+                                <li class="noread-lis" id="detail-four">
+                                    <div class="lis-box">
+                                        <img src="../img/envelope-un.png" alt="">
+                                        <div class="right">
+                                            <p class="popup-title">标题内容</p>
+                                            <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                                加工圈加工圈加工圈加工圈
+                                            </p>
+                                        </div>
                                     </div>
+                                    <span class="time">发布时间：2019-2-1</span>
+                                </li>
+                            </ul>
+                            <!-- 分页 -->
+                            <div class="customBootstrap customBootstrap1">
+                                <div class="customBootstrap-relvaer">
+                                    <p>共100条</p>
+                                    <ul id="paging3" class="pagination"></ul>
+                                    <p class="page-p">前往 <input class="get-page get-page33" type="number"> 页</p>
                                 </div>
-                                <span class="time">发布时间：2019-2-1</span>
-                            </li>
-                        </ul>
-                        <!-- 分页 -->
-                        <div class="customBootstrap customBootstrap1">
-                            <div class="customBootstrap-relvaer">
-                                <p>共100条</p>
-                                <ul id="paging-id" class="pagination"></ul>
-                                <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
                             </div>
                         </div>
-                    </div>
-                    <ul class="title-mains">
-                        <li class="tilte-li" id="detail-one-id">
-                            <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
-                            </div>
-                            <img src="../img/x.png" alt="" class="delet-unread">
-                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈
-                            </p>
-                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
-                        </li>
-                        <li class="tilte-li"  id="detail-two-id">
-                            <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
-                            </div>
-                            <img src="../img/x.png" alt="" class="delet-unread">
-                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈
-                            </p>
-                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
-                        </li>
-                        <li class="tilte-li"  id="detail-three-id">
-                            <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
-                            </div>
-                            <img src="../img/x.png" alt="" class="delet-unread">
-                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈
-                            </p>
-                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
-                        </li>
-                        <li  class="tilte-li" id="detail-four-id">
-                            <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
-                            </div>
-                            <img src="../img/x.png" alt="" class="delet-unread">
-                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈
-                            </p>
-                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
-                        </li>
-                    </ul>
-                </li>
-                <!-- 已读 -->
-                <li class="hides" id="has-play-id">
-                    <div class="hasread-div">
-                        <ul class="noread-ul">
-                            <li class="noread-lis" id="has-detail-one">
-                                <div class="lis-box">
-                                    <img src="../img/envelope.png" alt="">
-                                    <div class="right">
-                                        <p class="popup-title">标题内容</p>
-                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                            加工圈加工圈加工圈加工圈
-                                        </p>
-                                    </div>
+                        <ul class="title-mains">
+                            <li class="tilte-li" id="detail-one-id">
+                                <div class="unread-top">
+                                    <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                    <p class="time-unread">发布时间：2019-2-1</p>
                                 </div>
-                                <span class="time">发布时间：2019-2-1</span>
+                                <img src="../img/x.png" alt="" class="delet-unread">
+                                <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈
+                                </p>
+                                <button type="button" class="return">返&nbsp;&nbsp;回</button>
                             </li>
-                            <li class="noread-lis" id="has-detail-two">
-                                <div class="lis-box">
-                                    <img src="../img/envelope.png" alt="">
-                                    <div class="right">
-                                        <p class="popup-title">标题内容</p>
-                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                            加工圈加工圈加工圈加工圈
-                                        </p>
-                                    </div>
+                            <li class="tilte-li" id="detail-two-id">
+                                <div class="unread-top">
+                                    <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                    <p class="time-unread">发布时间：2019-2-1</p>
                                 </div>
-                                <span class="time">发布时间：2019-2-1</span>
+                                <img src="../img/x.png" alt="" class="delet-unread">
+                                <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈
+                                </p>
+                                <button type="button" class="return">返&nbsp;&nbsp;回</button>
                             </li>
-                            <li class="noread-lis" id="has-detail-three">
-                                <div class="lis-box">
-                                    <img src="../img/envelope.png" alt="">
-                                    <div class="right">
-                                        <p class="popup-title">标题内容</p>
-                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                            加工圈加工圈加工圈加工圈
-                                        </p>
-                                    </div>
+                            <li class="tilte-li" id="detail-three-id">
+                                <div class="unread-top">
+                                    <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                    <p class="time-unread">发布时间：2019-2-1</p>
                                 </div>
-                                <span class="time">发布时间：2019-2-1</span>
+                                <img src="../img/x.png" alt="" class="delet-unread">
+                                <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈
+                                </p>
+                                <button type="button" class="return">返&nbsp;&nbsp;回</button>
                             </li>
-                            <li class="noread-lis" id="has-detail-four">
-                                <div class="lis-box">
-                                    <img src="../img/envelope.png" alt="">
-                                    <div class="right">
-                                        <p class="popup-title">标题内容</p>
-                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                            加工圈加工圈加工圈加工圈
-                                        </p>
-                                    </div>
+                            <li class="tilte-li" id="detail-four-id">
+                                <div class="unread-top">
+                                    <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                    <p class="time-unread">发布时间：2019-2-1</p>
                                 </div>
-                                <span class="time">发布时间：2019-2-1</span>
+                                <img src="../img/x.png" alt="" class="delet-unread">
+                                <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈
+                                </p>
+                                <button type="button" class="return">返&nbsp;&nbsp;回</button>
                             </li>
                         </ul>
-                        <!-- 分页 -->
-                        <div class="customBootstrap customBootstrap1">
-                            <div class="customBootstrap-relvaer">
-                                <p>共100条</p>
-                                <ul id="paging-id" class="pagination"></ul>
-                                <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+                    </li>
+                    <!-- 已读 -->
+                    <li class="hides" id="has-play-id">
+                        <div class="hasread-div">
+                            <ul class="noread-ul">
+                                <li class="noread-lis" id="has-detail-one">
+                                    <div class="lis-box">
+                                        <img src="../img/envelope.png" alt="">
+                                        <div class="right">
+                                            <p class="popup-title">标题内容</p>
+                                            <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                                加工圈加工圈加工圈加工圈
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="time">发布时间：2019-2-1</span>
+                                </li>
+                                <li class="noread-lis" id="has-detail-two">
+                                    <div class="lis-box">
+                                        <img src="../img/envelope.png" alt="">
+                                        <div class="right">
+                                            <p class="popup-title">标题内容</p>
+                                            <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                                加工圈加工圈加工圈加工圈
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="time">发布时间：2019-2-1</span>
+                                </li>
+                                <li class="noread-lis" id="has-detail-three">
+                                    <div class="lis-box">
+                                        <img src="../img/envelope.png" alt="">
+                                        <div class="right">
+                                            <p class="popup-title">标题内容</p>
+                                            <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                                加工圈加工圈加工圈加工圈
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="time">发布时间：2019-2-1</span>
+                                </li>
+                                <li class="noread-lis" id="has-detail-four">
+                                    <div class="lis-box">
+                                        <img src="../img/envelope.png" alt="">
+                                        <div class="right">
+                                            <p class="popup-title">标题内容</p>
+                                            <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                                加工圈加工圈加工圈加工圈
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="time">发布时间：2019-2-1</span>
+                                </li>
+                            </ul>
+                            <!-- 分页 -->
+                            <div class="customBootstrap customBootstrap1">
+                                <div class="customBootstrap-relvaer">
+                                    <p>共100条</p>
+                                    <ul id="paging4" class="pagination"></ul>
+                                    <p class="page-p">前往 <input class="get-page get-page44" type="number"> 页</p>
+                                </div>
                             </div>
                         </div>
-                     </div>
                         <ul class="hasread-title-mains">
-                        <li class="tilte-li" id="has-detail-one-id">
-                            <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
-                            </div>
-                            <img src="../img/x.png" alt="" class="delet-unread">
-                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈
-                            </p>
-                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
-                        </li>
-                        <li class="tilte-li"  id="has-detail-two-id">
-                            <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
-                            </div>
-                            <img src="../img/x.png" alt="" class="delet-unread">
-                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈
-                            </p>
-                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
-                        </li>
-                        <li class="tilte-li"  id="has-detail-three-id">
-                            <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
-                            </div>
-                            <img src="../img/x.png" alt="" class="delet-unread">
-                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈
-                            </p>
-                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
-                        </li>
-                        <li  class="tilte-li" id="has-detail-four-id">
-                            <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
-                            </div>
-                            <img src="../img/x.png" alt="" class="delet-unread">
-                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈
-                            </p>
-                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
-                        </li>
-                    </ul>
-        
-                </li>
-                <!-- 所有 -->
-                <li class="hides" id="all-play-id">
-                    <div class="allread-div">
-                        <ul class="noread-ul">
-                            <li class="noread-lis" id="allread-detail-one">
-                                <div class="lis-box">
-                                    <img src="../img/envelope-un.png" alt="">
-                                    <div class="right">
-                                        <p class="popup-title">标题内容</p>
-                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                            加工圈加工圈加工圈加工圈
-                                        </p>
-                                    </div>
+                            <li class="tilte-li" id="has-detail-one-id">
+                                <div class="unread-top">
+                                    <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                    <p class="time-unread">发布时间：2019-2-1</p>
                                 </div>
-                                <span class="time">发布时间：2019-2-1</span>
+                                <img src="../img/x.png" alt="" class="delet-unread">
+                                <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈
+                                </p>
+                                <button type="button" class="return">返&nbsp;&nbsp;回</button>
                             </li>
-                            <li class="noread-lis" id="allread-detail-two">
-                                <div class="lis-box">
-                                    <img src="../img/envelope-un.png" alt="">
-                                    <div class="right">
-                                        <p class="popup-title">标题内容</p>
-                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                            加工圈加工圈加工圈加工圈
-                                        </p>
-                                    </div>
+                            <li class="tilte-li" id="has-detail-two-id">
+                                <div class="unread-top">
+                                    <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                    <p class="time-unread">发布时间：2019-2-1</p>
                                 </div>
-                                <span class="time">发布时间：2019-2-1</span>
+                                <img src="../img/x.png" alt="" class="delet-unread">
+                                <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈
+                                </p>
+                                <button type="button" class="return">返&nbsp;&nbsp;回</button>
                             </li>
-                            <li class="noread-lis" id="allread-detail-three">
-                                <div class="lis-box">
-                                    <img src="../img/envelope-un.png" alt="">
-                                    <div class="right">
-                                        <p class="popup-title">标题内容</p>
-                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                            加工圈加工圈加工圈加工圈
-                                        </p>
-                                    </div>
+                            <li class="tilte-li" id="has-detail-three-id">
+                                <div class="unread-top">
+                                    <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                    <p class="time-unread">发布时间：2019-2-1</p>
                                 </div>
-                                <span class="time">发布时间：2019-2-1</span>
+                                <img src="../img/x.png" alt="" class="delet-unread">
+                                <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈
+                                </p>
+                                <button type="button" class="return">返&nbsp;&nbsp;回</button>
                             </li>
-                            <li class="noread-lis" id="allread-detail-four">
-                                <div class="lis-box">
-                                    <img src="../img/envelope-un.png" alt="">
-                                    <div class="right">
-                                        <p class="popup-title">标题内容</p>
-                                        <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                            加工圈加工圈加工圈加工圈
-                                        </p>
-                                    </div>
+                            <li class="tilte-li" id="has-detail-four-id">
+                                <div class="unread-top">
+                                    <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                    <p class="time-unread">发布时间：2019-2-1</p>
                                 </div>
-                                <span class="time">发布时间：2019-2-1</span>
+                                <img src="../img/x.png" alt="" class="delet-unread">
+                                <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈
+                                </p>
+                                <button type="button" class="return">返&nbsp;&nbsp;回</button>
                             </li>
                         </ul>
-                        <!-- 分页 -->
-                        <div class="customBootstrap customBootstrap1">
-                            <div class="customBootstrap-relvaer">
-                                <p>共100条</p>
-                                <ul id="paging-id" class="pagination"></ul>
-                                <p class="page-p">前往 <input class="get-page get-page2" type="number"> 页</p>
+
+                    </li>
+                    <!-- 所有 -->
+                    <li class="hides" id="all-play-id">
+                        <div class="allread-div">
+                            <ul class="noread-ul">
+                                <li class="noread-lis" id="allread-detail-one">
+                                    <div class="lis-box">
+                                        <img src="../img/envelope-un.png" alt="">
+                                        <div class="right">
+                                            <p class="popup-title">标题内容</p>
+                                            <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                                加工圈加工圈加工圈加工圈
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="time">发布时间：2019-2-1</span>
+                                </li>
+                                <li class="noread-lis" id="allread-detail-two">
+                                    <div class="lis-box">
+                                        <img src="../img/envelope-un.png" alt="">
+                                        <div class="right">
+                                            <p class="popup-title">标题内容</p>
+                                            <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                                加工圈加工圈加工圈加工圈
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="time">发布时间：2019-2-1</span>
+                                </li>
+                                <li class="noread-lis" id="allread-detail-three">
+                                    <div class="lis-box">
+                                        <img src="../img/envelope-un.png" alt="">
+                                        <div class="right">
+                                            <p class="popup-title">标题内容</p>
+                                            <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                                加工圈加工圈加工圈加工圈
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="time">发布时间：2019-2-1</span>
+                                </li>
+                                <li class="noread-lis" id="allread-detail-four">
+                                    <div class="lis-box">
+                                        <img src="../img/envelope-un.png" alt="">
+                                        <div class="right">
+                                            <p class="popup-title">标题内容</p>
+                                            <p class="content-s">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                                加工圈加工圈加工圈加工圈
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <span class="time">发布时间：2019-2-1</span>
+                                </li>
+                            </ul>
+                            <!-- 分页 -->
+                            <div class="customBootstrap customBootstrap1">
+                                <div class="customBootstrap-relvaer">
+                                    <p>共100条</p>
+                                    <ul id="paging5" class="pagination"></ul>
+                                    <p class="page-p">前往 <input class="get-page get-page55" type="number"> 页</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <ul class="allread-title-mains">
-                        <li class="tilte-li" id="allread-detail-one-id">
-                            <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
-                            </div>
-                            <img src="../img/x.png" alt="" class="delet-unread">
-                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈
-                            </p>
-                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
-                        </li>
-                        <li class="tilte-li"  id="allread-detail-two-id">
-                            <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
-                            </div>
-                            <img src="../img/x.png" alt="" class="delet-unread">
-                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈
-                            </p>
-                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
-                        </li>
-                        <li class="tilte-li"  id="allread-detail-three-id">
-                            <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
-                            </div>
-                            <img src="../img/x.png" alt="" class="delet-unread">
-                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈
-                            </p>
-                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
-                        </li>
-                        <li  class="tilte-li" id="allread-detail-four-id">
-                            <div class="unread-top">
-                            <p class="title-unread"><img src="../img/x.png" alt=""> 标题内容</p>
-                            <p class="time-unread">发布时间：2019-2-1</p>
-                            </div>
-                            <img src="../img/x.png" alt="" class="delet-unread">
-                            <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
-                                加工圈加工圈加工圈加工圈加工圈加工圈
-                            </p>
-                            <button type="button" class="return">返&nbsp;&nbsp;回</button>
-                        </li>
-                    </ul>
-                </li>
+                        <ul class="allread-title-mains">
+                            <li class="tilte-li" id="allread-detail-one-id">
+                                <div class="unread-top">
+                                    <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                    <p class="time-unread">发布时间：2019-2-1</p>
+                                </div>
+                                <img src="../img/x.png" alt="" class="delet-unread">
+                                <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈
+                                </p>
+                                <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                            </li>
+                            <li class="tilte-li" id="allread-detail-two-id">
+                                <div class="unread-top">
+                                    <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                    <p class="time-unread">发布时间：2019-2-1</p>
+                                </div>
+                                <img src="../img/x.png" alt="" class="delet-unread">
+                                <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈
+                                </p>
+                                <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                            </li>
+                            <li class="tilte-li" id="allread-detail-three-id">
+                                <div class="unread-top">
+                                    <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                    <p class="time-unread">发布时间：2019-2-1</p>
+                                </div>
+                                <img src="../img/x.png" alt="" class="delet-unread">
+                                <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈
+                                </p>
+                                <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                            </li>
+                            <li class="tilte-li" id="allread-detail-four-id">
+                                <div class="unread-top">
+                                    <p class="title-unread"><img src="../img/message.png" alt=""> 标题内容</p>
+                                    <p class="time-unread">发布时间：2019-2-1</p>
+                                </div>
+                                <img src="../img/x.png" alt="" class="delet-unread">
+                                <p class="content-unread">加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈加工圈
+                                    加工圈加工圈加工圈加工圈加工圈加工圈
+                                </p>
+                                <button type="button" class="return">返&nbsp;&nbsp;回</button>
+                            </li>
+                        </ul>
+                    </li>
             </div>
         </div>
-    </div>
-    <script src="../js/jquery-3.1.1.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jqPaginator.js"></script>
-    <script src="../js/schedule.js"></script>
-    <script src="../js/jquery.datetimepicker.full.min.js"></script>
-    <script src="../js/distpicker.data.min.js"></script>
-    <script src="../js/distpicker.min.js"></script>
-    <script src="../js/highcharts.js"></script>
-    <script src="./managenment-police.js"></script>
+        <!-- 收支明细弹出框 -->
+        <div class="popup-recharge balance-detail">
+                <div class="popup-box payment-box">
+                    <p class="popup-name">收支明细导出</p>
+                    <span class="delet-x">X</span>
+                    <div class="leitype pay-type">
+                        交易类型<span class="maohao">:</span>
+                        <button type="button" class="btn btn-default dropdown-toggle pay-button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <label class="select select-type-d"></label>
+                            <span class="caret"></span>
+                        </button>
+                    </div>
+                    <ul class="dropdown-menu mes-typecli-d">
+                        <li>
+                            <a href="javascript:void(0)">
+                                <label class="select">全部</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <label class="select">监控消耗</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <label class="select">普通充值</label>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <label class="select">API消耗</label>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="start-end-time">
+                        <div class="startime payment-time">
+                            <span class="time-g"> 开始时间<span class="maohao">:</span></span>
+                            <div class="dataxj dataxj-g">
+                                <img src="../img/reqi.png" alt="" class="reqimg">
+                                <input type="text" class="datainput payment-g start-time5">
+
+                                <img class="xkes xkes5" src="../img/x.png" alt="">
+                                <div id='schedule-box5' class="boxshaw"></div>
+
+                                <img src="../img/sanzuo.png" alt="" class="leftjian">
+                                <img src="../img/sanyou.png" alt="" class="rightjian">
+                            </div>
+                        </div>
+                        <div class="startime payment-time">
+                            <span class="time-g">至</span>
+                            <div class="dataxj dataxj-k">
+                                <img src="../img/reqi.png" alt="" class="reqimg">
+                                <input type="text" class="datainput payment-g start-time6">
+
+                                <img class="xkes xkes6" src="../img/x.png" alt="">
+                                <div id='schedule-box6' class="boxshaw"></div>
+
+                                <img src="../img/sanzuo.png" alt="" class="leftjian">
+                                <img src="../img/sanyou.png" alt="" class="rightjian">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="verification">
+                        <span class="ver-span"> 验证码</span><span class="maohao">:</span>
+                        <input type="text" class="ver-input">
+                        <img src="../img/yards.png" alt="">
+                    </div>
+                    <button type="button" class="export-d">确定充值</button>
+                </div>
+        </div>
+        <!-- 充值弹出框 -->
+        <div class="popup-recharge cz-topup">
+                <div class="popup-box">
+                    <p class="popup-name">充值页面</p>
+                    <p class="popup-number"><span>订单号:</span>12312313132</p>
+                    <p class="method">
+                        <span>充值方式:</span>
+                        <img src="../img/wechat.png" class="method-img" alt="">
+                        <img src="../img/alipay.png" class="method-img" alt="">
+                        <img src="../img/bank_card.png" class="method-img" alt="">
+                    </p>
+                    <p class="popup-money">
+                        <span>充值金额:</span>
+                        <input type="number" class="topup">
+                        <span class="yuan1">元</span>
+                        <span class="reds">备注：充值金额不得小于50元</span>
+                    </p>
+                    <p class="popup-button">
+                        <button type="button">确定充值</button>
+                        <button type="button" class="canel">取消充值</button>
+                    </p>
+                </div>
+        </div>
+        <!-- 新增收货地址弹出框 -->
+        <div class="popup-recharge new-adr-box">
+                <div class="popup-box payment-box">
+                    <p class="popup-name">新增收货地址</p>
+                    <div class="leitype pay-type">
+                        <span>收货人姓名</span> <span class="maohao">:</span>
+                        <input type="text" name="" id="" class="consiname">
+                    </div>
+                    <div class="leitype pay-type">
+                        <span class="phone-number">电话号码</span> <span class="maohao">:</span>
+                        <input type="text" name="" id="" class="consiname">
+                    </div>
+                    <div class="leitype pay-type adr-div">
+                        <span class="f-right">地址</span><span class="maohao">:</span>
+                        <div data-toggle="distpicker" class="select-box">
+                            <select></select>
+                            <select></select>
+                            <select></select>
+                        </div>
+                        <input type="text" class="reg-adr" placeholder="街道">
+                    </div>
+                    <div class="leitype pay-type">
+                        <span class="f-right">邮编</span><span class="maohao">:</span>
+                        <input type="text" name="" id="" class="consiname" value="">
+                    </div>
+                    <input type="checkbox" checked="true" name="" id="" class="dagou">设为默认地址
+                    <p class="popup-button">
+                        <button type="button">确定</button>
+                        <button type="button" class="canel">取消</button>
+                    </p>
+                </div>
+        </div>
+
+        <!-- 修改收货地址弹出框 -->
+        <div class="popup-recharge change-adrbox">
+            <div class="popup-box payment-box">
+                <p class="popup-name">修改收货地址</p>
+                <div class="leitype pay-type">
+                    <span>收货人姓名</span> <span class="maohao">:</span>
+                    <input type="text" value="" name="" id="" class="consiname personame">
+                </div>
+                <div class="leitype pay-type">
+                    <span class="phone-number">电话号码</span> <span class="maohao">:</span>
+                    <input type="text" name="" id="" class="consiname iphone-num" value="">
+                </div>
+                <div class="leitype pay-type change-big">
+                    <span class="f-right">地址</span><span class="maohao">:</span>
+                    <!-- <div data-toggle="distpicker3" class="changes-box">
+                            <select></select>
+                            <select></select>
+                            <select></select>
+                    </div> -->
+                    <div id="distpicker3" class="changes-box">
+                        <div class="form-group">
+                            <select class="form-control" id="province6"></select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="city6"></select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" id="district6"></select>
+                        </div>
+                    </div>
+
+                    <input type="text" class="change-adr" placeholder="街道">
+                </div>
+                <div class="leitype pay-type">
+                    <span class="f-right">邮编</span><span class="maohao">:</span>
+                    <input type="text" name="" id="" class="consiname yz-number">
+                </div>
+                <input type="checkbox" checked="true" name="" id="" class="dagou">设为默认地址
+                <p class="popup-button">
+                    <button type="button">确定</button>
+                    <button type="button" class="canel">取消</button>
+                </p>
+            </div>
+        </div>
+        
+        <!-- 发票退票 -->
+        <div class="popup-recharge invoice-box-tan">
+                <div class="check-background"></div>
+                <div class="popup-box payment-box">
+                    <p class="popup-name">发票退票</p>
+                    <div class="leitype">
+                        <span><i>*</i> 退票原因</span><span class="maohao">:</span>
+                        <button type="button" class="btn btn-default dropdown-toggle consiname"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <label class="select reason-result"></label>
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu refund-reason">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">发票信息错误</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">发票类型错误</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <label class="select">退款</label>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="leitype">
+                        <span class="yun-note"><i>*</i> 备注</span><span class="maohao">:</span>
+                        <input type="text" name="" id="" class="consiname">
+                    </div>
+                    <div class="leitype">
+                        <span class="wliu"><i>*</i> 发票邮寄物流</span><span class="maohao">:</span>
+                        <input type="text" name="" id="" class="consiname">
+                    </div>
+                    <div class="leitype">
+                        <span class="yunumber"><i>*</i> 运单号</span><span class="maohao">:</span>
+                        <input type="text" name="" id="" class="consiname">
+                    </div>
+                    <div class="in-textarea">
+                        <p>邮寄地址<img src="../img/site.png" alt="" class="site"></p>
+                        <p>地址：杭州市余杭区文一西路983号3楼</p>
+                        <p>收件人：加工圈</p>
+                        <p>电话：11111111</p>
+                    </div>
+                    <p class="popup-button">
+                        <button type="button">退票</button>
+                        <button type="button" class="canel">取消</button>
+                    </p>
+                </div>
+        </div>
+        <!-- 导出个人明细 -->
+        <div class="popup-recharge person-detail">
+            <div class="check-background"></div>
+            <div class="popup-box">
+                <p class="popup-name">到处个人明细</p>
+                <img src="../img/details.png" alt="" class="detail-img">
+                <p class="detail-bton">
+                    <button>导&nbsp;&nbsp;出</button>
+                    <button class="detail-return">返&nbsp;&nbsp;回</button>
+                </p>
+            </div>
+        </div>
+        <!-- 发票列表详情 -->
+        <div class="popup-recharge lists-detail">
+            <div class="check-background"></div>
+            <div class="popup-box lists-box">
+                <p class="popup-name">发票详情</p>
+                <ul class="detail-title">
+                    <li>申请时间</li>
+                    <li>发票抬头</li>
+                    <li>发票总额</li>
+                    <li>发票性质</li>
+                    <li>发票状态</li>
+                    <li>备注</li>
+                </ul>
+                <ul class="fox-d">
+                    <li class="invoice-lis">
+                        <ul class="lis-li">
+                            <li>123456788</li>
+                            <li>产品名称</li>
+                            <li>订单</li>
+                            <li>2019-1-2</li>
+                            <li>￥2000.00</li>
+                            <li>￥2000.00</li>
+                        </ul>
+                    </li>
+                    <li class="invoice-lis">
+                        <ul class="lis-li">
+                            <li>2019-1-2</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>8</li>
+                            <li>5</li>
+                            <li>的说法地方</li>
+                        </ul>
+                    </li>
+                    <li class="invoice-lis">
+                        <ul class="lis-li">
+                            <li>2019-1-2</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>8</li>
+                            <li>5</li>
+                            <li>的说法地方</li>
+                        </ul>
+                    </li>
+                    <li class="invoice-lis">
+                        <ul class="lis-li">
+                            <li>2019-1-2</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>8</li>
+                            <li>5</li>
+                            <li>的说法地方</li>
+                        </ul>
+                    </li>
+                    <li class="invoice-lis">
+                        <ul class="lis-li">
+                            <li>2019-1-2</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>8</li>
+                            <li>5</li>
+                            <li>的说法地方</li>
+                        </ul>
+                    </li>
+                    <li class="invoice-lis">
+                        <ul class="lis-li">
+                            <li>2019-1-2</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>8</li>
+                            <li>5</li>
+                            <li>的说法地方</li>
+                        </ul>
+                    </li>
+                    <li class="invoice-lis">
+                        <ul class="lis-li">
+                            <li>2019-1-2</li>
+                            <li>1</li>
+                            <li>2</li>
+                            <li>8</li>
+                            <li>5</li>
+                            <li>的说法地方</li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 分页 -->
+                <div class="customBootstrap customBootstrap1">
+                    <div class="customBootstrap-relvaer">
+                        <p>共100条</p>
+                        <ul id="lists-paing" class="pagination"></ul>
+                        <p class="page-p">前往 <input class="get-page get-page4" type="number"> 页</p>
+                    </div>
+                </div>
+                <button class="lists-return">返&nbsp;&nbsp;回</button>
+            </div>
+        </div>
+        <script src="../js/jquery-3.1.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/jqPaginator.js"></script>
+        <script src="../js/schedule.js"></script>
+        <script src="../js/jquery.datetimepicker.full.min.js"></script>
+        <script src="../js/distpicker.data.min.js"></script>
+        <script src="../js/distpicker.min.js"></script>
+        <script src="../js/highcharts.js"></script>
+        <script src="./managenment-police.js"></script>
 </body>
 
 </html>

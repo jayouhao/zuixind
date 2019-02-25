@@ -43,12 +43,14 @@ body{
    color: white;
    margin-right: 40px;
 }
-.headrigth-top li:nth-of-type(6){
+.headrigth-top img{
+    margin-right: 5px;
+}
+.headrigth-top li:nth-of-type(5){
     margin-right: 0;
 }
-.headrigth-top li:nth-of-type(4) a{
-    color: white;
-    text-decoration: none;
+.headrigth-top li:nth-of-type(4){
+    margin-right: 20px;
 }
 .headright-bot{
     float: left;
@@ -679,14 +681,14 @@ input[type="number"]{
 }
 .accout-box{
     display: none;
-}
-.account-balance{
     width: 250px;
     height: 82px;
-    background: black;
     position: absolute;
     left: 96px;
     top: 40px;
+}
+.account-balance{
+    background: black;
     padding: 15px 10px;
     display: flex;
     justify-content: space-between;

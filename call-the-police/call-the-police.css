@@ -48,12 +48,11 @@ body{
 .headrigth-top img{
     margin-right: 5px;
 }
-.headrigth-top li:nth-of-type(6){
+.headrigth-top li:nth-of-type(5){
     margin-right: 0;
 }
-.headrigth-top li:nth-of-type(5) a{
-    color: white;
-    text-decoration: none;
+.headrigth-top li:nth-of-type(4){
+    margin-right: 20px;
 }
 .headright-bot{
     float: left;
@@ -66,6 +65,19 @@ body{
 }
 .headright-bot span{
     line-height: 38px;
+}
+
+.prompt{
+    background: red;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 10px;
+    padding: 1px 4px;
+    position: relative;
+    top: -2px;
+}
+.prompt-top{
+    top: -12px;
 }
 .addbuton{
     background: #FEB500;
@@ -932,8 +944,10 @@ table{
 }
 .promptplay-box{
     position: fixed;
-    top: 30%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
+    margin-top: -111px;
+    margin-left: -282.5px;
     width: 565px;
     height: 222px;
     background: white;
@@ -1042,14 +1056,14 @@ table{
 }
 .accout-box{
     display: none;
-}
-.account-balance{
     width: 250px;
     height: 82px;
-    background: black;
     position: absolute;
     left: 96px;
     top: 40px;
+}
+.account-balance{
+    background: black;
     padding: 15px 10px;
     display: flex;
     justify-content: space-between;
@@ -1086,4 +1100,7 @@ table{
     text-align: center;
     line-height: 25px;
     margin-top: 15px;
+}
+.ancement-play-box .customBootstrap{
+    margin-top: 0;
 }

@@ -251,36 +251,6 @@ $(function () {
     }
 
 
-    // 点击消息中心切换
-    $('.meg-click').mouseenter(function () {
-        if( $('.meg-pop-up').css('display')=='block'){
-            $('.meg-pop-up').slideUp();
-        }else{
-            $('.meg-pop-up').slideDown();
-        }
-    });
-    $('.meg-pop-up').mouseleave(function () {
-        if( $('.meg-pop-up').css('display')=='block'){
-            $('.meg-pop-up').slideUp();
-        }else{
-            $('.meg-pop-up').slideDown();
-        }
-    });
-
-    
-    // $('.meg-state .note-lis').click(function () {
-    //     $('.meg-tan-box').show();
-    //     let atitle=$(this).parent().siblings('.meg-table-title').find('.note-li').text();
-    //     $('.head-title').text(atitle);
-    //     let atime=$(this).children().children('.data-li').text();
-    //     $('.toplast-p span:nth-of-type(1)').text('接受时间:'+atime);
-    //     let atype=$(this).children().children('.call-li').text();
-    //     $('.toplast-p span:nth-of-type(2)').text('消息类型:'+atype);
-    //     let acontent=$(this).children().children('.note-lis').find('p').text();
-    //     $('.meg-main-content').text(acontent)
-    // })
-
-
     $('.meg-state .note-lis').click(function () {
         $('.meg-wrap-box').hide();
         $('.message-div').show();
@@ -408,13 +378,33 @@ $(function () {
         }
     })
 
+    
+     // 点击消息中心切换
+     $('.meg-click').mouseenter(function () {
+        $('.meg-pop-up').slideDown();
+        $('.userset-namerenbox,.accout-box').slideUp();
+    });
+    $('.meg-pop-up').mouseleave(function () {
+            $('.meg-pop-up').slideUp();
+    });
+        
+
     // 昵称
-    $('.nice').click(function(){
-        $('.userset-namerenbox').toggle();
-    })
+    $('.nice').mouseenter(function(){
+        $('.userset-namerenbox').slideDown();
+        $('.meg-pop-up,.accout-box').slideUp();
+    });
+
+    $('.userset-namerenbox').mouseleave(function(){
+        $('.userset-namerenbox').slideUp();
+    });
 
     // 账户余额
-    $('.accout').click(function(){
-        $('.accout-box').toggle();
-    })
+    $('.accout').mouseenter(function(){
+        $('.accout-box').slideDown();
+        $('.userset-namerenbox,.meg-pop-up').slideUp();
+    });
+    $('.accout-box').mouseleave(function(){
+        $('.accout-box').slideUp();
+    });
 })
