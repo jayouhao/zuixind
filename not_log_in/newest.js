@@ -104,25 +104,19 @@ $(function () {
     });
 
     $('.appear').click(function () {
-        console.log('初次阿里')
         $('.middle-selecth').css('display', 'block');
     })
     $('.hiddens').click(function () {
-        console.log('初次阿里')
         $('.middle-selecth').css('display', 'none');
     })
 
-
-
+    
+   
     $('.lidiv a').click(function () {
         $(this).addClass('alit').parent().siblings().children().removeClass('alit');
-    })
-
-    // 点击切换内容
-    $('.alit').click(function () {
-        var a = $(this).attr('id');
-        $('.help-ulone').hide();
-        $('#' + a + '-' + 'id').show();
+            var a = $(this).attr('id');
+            $('.help-ulone').hide();
+            $('#' + a + '-' + 'id').show();
     })
 
     $('.middle-left li:nth-of-type(3)').click(function () {
@@ -139,15 +133,23 @@ $(function () {
 
 
     // 点击左边导航帮助中心显示
-    $('.help-center-con li').click(function () {
-        $(this).find('.lidiv').show();
-        $(this).siblings().find('.lidiv').hide();
-        if ($(this).find('.lidiv').eq(0).css('display') == 'block') {
-            $('.help-center-con li').css({ 'border-bottom': 'none' });
+    $('.help-center-con p').click(function () {
+       $(this).siblings('.lidiv').toggle();
+       $(this).parent().siblings().find('.lidiv').hide();
+
+       if( $(this).parent().siblings().find('.lidiv').css("display")=='none'){
+            $('.help-center-con img').css('transform', 'rotate(-360deg)');
+            $('.help-center-con li').css({ 'border-bottom': '1px solid #E5E5E5' });
+       }
+       
+       if ($(this).siblings('.lidiv').css('display') == 'block') {
+            $(this).parent().css({ 'border-bottom': 'none' });
             $(this).find('img').css('transform', 'rotate(90deg)')
         } else {
-            $('.help-center-con li').css({ 'border-bottom': '1px solid #E5E5E5' });
-            $(this).find('img').css('transform', 'rotate(-90deg)')
+            $(this).parent().css({ 'border-bottom': '1px solid #E5E5E5' });
+            $(this).find('img').css('transform', 'rotate(-360deg)')
         }
-    })
+
+    });
+  
 })

@@ -1097,7 +1097,7 @@ input[type="number"]{
     width: 250px;
     height: 82px;
     position: absolute;
-    left: 96px;
+    left: -26px;
     top: 40px;
 }
 .account-balance{
