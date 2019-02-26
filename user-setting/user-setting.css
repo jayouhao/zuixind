@@ -955,7 +955,7 @@ input[type="number"]{
 .change-con{
     display: flex;
     justify-content: space-between;
-    width: 370px;
+    width: 378px;
     margin: auto;
 }
 .change-lefts{
@@ -1001,6 +1001,7 @@ input[type="number"]{
     position: absolute;
     right: 20px;
     top: 15px;
+    cursor: pointer;
 }
 .set-success{
     width: 274px;

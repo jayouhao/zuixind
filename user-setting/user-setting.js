@@ -17,6 +17,16 @@ $(function(){
     $(".canel").click(function () {
         $(".popup-recharge").css({ display: "none" });
     })
+
+    //修改密码弹出
+    $(".set-password").click(function(){
+        $(".change-pass-box").show();
+    })
+    //修改手机号码
+    $(".set-phone").click(function(){
+        $(".iphoe-play-box").show();
+    })
+
     //返回    
     $(".setting-submit").click(function(){
         window.history.back(-1);
