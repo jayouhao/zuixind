@@ -1,4 +1,18 @@
 $(function () {
+
+    //导航充值按钮
+    $(".inter-cz").click(function () {
+        $(".cz-topup").show();
+    })
+    //选择哪种支付方式
+    $(".method-img").click(function () {
+        $(this).css({ boxShadow: "0 0 1px blue" }).siblings().css({ boxShadow: "0 0 0" });
+    })
+    //取消支付
+    $(".canel").click(function () {
+        $(".popup-recharge").css({ display: "none" });
+    })
+
     // 切换左边导航
     $('.report').click(function () {
         $(this).addClass('reporte8').siblings().removeClass('reporte8');
@@ -31,8 +45,8 @@ $(function () {
     });
 
 
-     //分页
-     $('#paging1').jqPaginator({
+    //分页
+    $('#paging1').jqPaginator({
         //总页数
         totalPages: 100,
         //显示多少个页码
@@ -127,7 +141,7 @@ $(function () {
             console.log("你选择的=>", n, "页");
         }
     });
-    
+
 
     //输入分页的
     document.onkeydown = function (event) {
@@ -254,11 +268,11 @@ $(function () {
     $('.meg-state .note-lis').click(function () {
         $('.meg-wrap-box').hide();
         $('.message-div').show();
-        let atitle=$(this).parents('.meg-ul-box').siblings('.meg-table-title').find('.note-li').text();
+        let atitle = $(this).parents('.meg-ul-box').siblings('.meg-table-title').find('.note-li').text();
         $('.head-title').text(atitle);
-        let atime=$(this).siblings('.data-li').text();
-        $('.toplast-p').text('发布时间: '+atime);
-        let acontent=$(this).text();
+        let atime = $(this).siblings('.data-li').text();
+        $('.toplast-p').text('发布时间: ' + atime);
+        let acontent = $(this).text();
         $('.meg-main-content').text(acontent)
     })
 
@@ -295,116 +309,116 @@ $(function () {
 
 
     // 系統公告顯示
-    $('.headright-bot .system-ancement').click(function(){
+    $('.headright-bot .system-ancement').click(function () {
         $('.ancement-play-box').show();
     })
 
-    $('.play-right .delet,.delet-unread').click(function(){
+    $('.play-right .delet,.delet-unread').click(function () {
         $('.ancement-play-box').hide();
     })
 
     // 公告左边导航切换
-    $('.play-left-nav li').click(function(){
+    $('.play-left-nav li').click(function () {
         $(this).addClass('skyblue-color').siblings().removeClass('skyblue-color');
-       var a= $(this).attr('id');
-       $('#'+a+'-'+'id').show().siblings().hide();
+        var a = $(this).attr('id');
+        $('#' + a + '-' + 'id').show().siblings().hide();
     })
 
     // 未读公告内容详情
-    $('.noread-div li').click(function(){
+    $('.noread-div li').click(function () {
         $(this).parents('.noread-div').hide();
-        var a=$(this).attr('id');
+        var a = $(this).attr('id');
         $('.title-mains').show();
-        $('#'+a+'-'+'id').show().siblings().hide();
+        $('#' + a + '-' + 'id').show().siblings().hide();
     })
 
 
-    $('.title-mains .return').click(function(){
+    $('.title-mains .return').click(function () {
         $(this).parents('.tilte-li').hide().parents().siblings('.noread-div').show();
     })
 
 
     // 已读公告内容详情
-    $('.hasread-div li').click(function(){
+    $('.hasread-div li').click(function () {
         $(this).parents('.hasread-div').hide();
-        var a=$(this).attr('id');
+        var a = $(this).attr('id');
         $('.hasread-title-mains').show();
-        $('#'+a+'-'+'id').show().siblings().hide();
+        $('#' + a + '-' + 'id').show().siblings().hide();
     })
 
 
-    $('.hasread-title-mains .return').click(function(){
+    $('.hasread-title-mains .return').click(function () {
         $(this).parents('.tilte-li').hide().parents().siblings('.hasread-div').show();
     })
 
 
     // 所有公告内容详情
-    $('.allread-div li').click(function(){
+    $('.allread-div li').click(function () {
         $(this).parents('.allread-div').hide();
-        var a=$(this).attr('id');
+        var a = $(this).attr('id');
         $('.allread-title-mains').show();
-        $('#'+a+'-'+'id').show().siblings().hide();
+        $('#' + a + '-' + 'id').show().siblings().hide();
     })
-  
-    $('.allread-title-mains .return').click(function(){
+
+    $('.allread-title-mains .return').click(function () {
         $(this).parents('.tilte-li').hide().parents().siblings('.allread-div').show();
     })
 
 
-    $("input[name=ads]").click(function(){
-        if($("input[name=ads]:checked").length>0){
-       $(this).parents('.meg-table-title').siblings('.meg-ul-box').children().children().children().find("input[type=checkbox]").attr("checked",true);
-      
-        }else{
-            $(this).parents('.meg-table-title').siblings('.meg-ul-box').children().children().children().find("input[type=checkbox]").attr("checked",false);
+    $("input[name=ads]").click(function () {
+        if ($("input[name=ads]:checked").length > 0) {
+            $(this).parents('.meg-table-title').siblings('.meg-ul-box').children().children().children().find("input[type=checkbox]").attr("checked", true);
+
+        } else {
+            $(this).parents('.meg-table-title').siblings('.meg-ul-box').children().children().children().find("input[type=checkbox]").attr("checked", false);
         }
     })
 
-    $("input[name=adstwo]").click(function(){
-        if($("input[name=adstwo]:checked").length>0){
-            $(this).parents('.meg-table-title').siblings('.meg-ul-box').children().children().children().find("input[type=checkbox]").attr("checked",true);
-        
-        }else{
-            $(this).parents('.meg-table-title').siblings('.meg-ul-box').children().children().children().find("input[type=checkbox]").attr("checked",false);
+    $("input[name=adstwo]").click(function () {
+        if ($("input[name=adstwo]:checked").length > 0) {
+            $(this).parents('.meg-table-title').siblings('.meg-ul-box').children().children().children().find("input[type=checkbox]").attr("checked", true);
+
+        } else {
+            $(this).parents('.meg-table-title').siblings('.meg-ul-box').children().children().children().find("input[type=checkbox]").attr("checked", false);
         }
     })
 
-    $("input[name=adsthree]").click(function(){
-        if($("input[name=adsthree]:checked").length>0){
-             $(this).parents('.meg-table-title').siblings('.meg-ul-box').children().children().children().find("input[type=checkbox]").attr("checked",true);
-        
-        }else{
-            $(this).parents('.meg-table-title').siblings('.meg-ul-box').children().children().children().find("input[type=checkbox]").attr("checked",false);
+    $("input[name=adsthree]").click(function () {
+        if ($("input[name=adsthree]:checked").length > 0) {
+            $(this).parents('.meg-table-title').siblings('.meg-ul-box').children().children().children().find("input[type=checkbox]").attr("checked", true);
+
+        } else {
+            $(this).parents('.meg-table-title').siblings('.meg-ul-box').children().children().children().find("input[type=checkbox]").attr("checked", false);
         }
     })
 
-    
-     // 点击消息中心切换
-     $('.meg-click').mouseenter(function () {
+
+    // 点击消息中心切换
+    $('.meg-click').mouseenter(function () {
         $('.meg-pop-up').slideDown();
         $('.userset-namerenbox,.accout-box').slideUp();
     });
     $('.meg-pop-up').mouseleave(function () {
-            $('.meg-pop-up').slideUp();
+        $('.meg-pop-up').slideUp();
     });
-        
+
 
     // 昵称
-    $('.nice').mouseenter(function(){
+    $('.nice').mouseenter(function () {
         $('.userset-namerenbox').slideDown();
         $('.meg-pop-up,.accout-box').slideUp();
     });
 
-    $('.userset-namerenbox').mouseleave(function(){
+    $('.userset-namerenbox').mouseleave(function () {
         $('.userset-namerenbox').slideUp();
     });
 
     // 账户余额
-    $('.accout').mouseenter(function(){
+    $('.accout').mouseenter(function () {
         $('.accout-box').slideDown();
         $('.userset-namerenbox,.meg-pop-up').slideUp();
     });
-    $('.accout-box').mouseleave(function(){
+    $('.accout-box').mouseleave(function () {
         $('.accout-box').slideUp();
     });
 })

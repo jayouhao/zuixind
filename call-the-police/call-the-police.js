@@ -7,6 +7,20 @@ $(function () {
         $(".centen-police-set").show();
         $(".update").show();
     }
+
+    //导航充值按钮
+    $(".inter-cz").click(function () {
+        $(".cz-topup").show();
+    })
+    //选择哪种支付方式
+    $(".method-img").click(function () {
+        $(this).css({ boxShadow: "0 0 1px blue" }).siblings().css({ boxShadow: "0 0 0" });
+    })
+    //取消支付
+    $(".canel").click(function () {
+        $(".popup-recharge").css({ display: "none" });
+    })
+
     //左边导航的
     $(".report").click(function () {
         $(".reporte8").removeClass("reporte8");
@@ -49,19 +63,19 @@ $(function () {
 
     //分页报警设置的
     $('#paging1').jqPaginator({
-         //总页数
-         totalPages: 100,
-         //显示多少个页码
-         visiblePages: 1,
-         //当前页
-         currentPage: 1,
-         prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i><<\/a><\/li>',
-         next: '<li class="next"><a href="javascript:void(0);">><i class="arrow arrow3"><\/i><\/a><\/li>',
-         page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
-         onPageChange: function (n) {
-             $("#demo2-text").html("当前第" + n + "页");
-             console.log("你选择的=>", n, "页");
-         }
+        //总页数
+        totalPages: 100,
+        //显示多少个页码
+        visiblePages: 1,
+        //当前页
+        currentPage: 1,
+        prev: '<li class="prev"><a href="javascript:void(0);"><i class="arrow arrow2"><\/i><<\/a><\/li>',
+        next: '<li class="next"><a href="javascript:void(0);">><i class="arrow arrow3"><\/i><\/a><\/li>',
+        page: '<li class="page"><a href="javascript:void(0);">{{page}}<\/a><\/li>',
+        onPageChange: function (n) {
+            $("#demo2-text").html("当前第" + n + "页");
+            console.log("你选择的=>", n, "页");
+        }
     });
 
     //分页
@@ -138,7 +152,7 @@ $(function () {
                     });
                     $(".get-page").val("")
                 }
-            }else{
+            } else {
                 var num = $(".get-page1").val();
                 if (num) {
                     $('#paging1').jqPaginator({
@@ -222,7 +236,7 @@ $(function () {
 
 
     //重置按钮
-    $(".reset").click(function(){
+    $(".reset").click(function () {
         $(".police-input input").val('');
         $(".select").text("全部")
     })
@@ -320,96 +334,96 @@ $(function () {
     })
 
 
-     // 系統公告顯示
-     $('.headright-bot .system-ancement').click(function(){
+    // 系統公告顯示
+    $('.headright-bot .system-ancement').click(function () {
         $('.ancement-play-box').show();
     })
 
-    $('.play-right .delet,.delet-unread').click(function(){
+    $('.play-right .delet,.delet-unread').click(function () {
         $('.ancement-play-box').hide();
     })
 
     // 公告左边导航切换
-    $('.play-left-nav li').click(function(){
+    $('.play-left-nav li').click(function () {
         $(this).addClass('skyblue-color').siblings().removeClass('skyblue-color');
-       var a= $(this).attr('id');
-       $('#'+a+'-'+'id').show().siblings().hide();
+        var a = $(this).attr('id');
+        $('#' + a + '-' + 'id').show().siblings().hide();
     })
 
     // 未读公告内容详情
-    $('.noread-div li').click(function(){
+    $('.noread-div li').click(function () {
         $(this).parents('.noread-div').hide();
-        var a=$(this).attr('id');
+        var a = $(this).attr('id');
         $('.title-mains').show();
-        $('#'+a+'-'+'id').show().siblings().hide();
+        $('#' + a + '-' + 'id').show().siblings().hide();
     })
 
 
-    $('.title-mains .return').click(function(){
+    $('.title-mains .return').click(function () {
         $(this).parents('.tilte-li').hide().parents().siblings('.noread-div').show();
     })
 
 
     // 已读公告内容详情
-    $('.hasread-div li').click(function(){
+    $('.hasread-div li').click(function () {
         $(this).parents('.hasread-div').hide();
-        var a=$(this).attr('id');
+        var a = $(this).attr('id');
         $('.hasread-title-mains').show();
-        $('#'+a+'-'+'id').show().siblings().hide();
+        $('#' + a + '-' + 'id').show().siblings().hide();
     })
 
 
-    $('.hasread-title-mains .return').click(function(){
+    $('.hasread-title-mains .return').click(function () {
         $(this).parents('.tilte-li').hide().parents().siblings('.hasread-div').show();
     })
 
 
     // 所有公告内容详情
-    $('.allread-div li').click(function(){
+    $('.allread-div li').click(function () {
         $(this).parents('.allread-div').hide();
-        var a=$(this).attr('id');
+        var a = $(this).attr('id');
         $('.allread-title-mains').show();
-        $('#'+a+'-'+'id').show().siblings().hide();
+        $('#' + a + '-' + 'id').show().siblings().hide();
     })
 
 
 
-    $('.allread-title-mains .return').click(function(){
+    $('.allread-title-mains .return').click(function () {
         $(this).parents('.tilte-li').hide().parents().siblings('.allread-div').show();
     })
 
     // 提示框
-    $('.promptplay-box .return').click(function(){
+    $('.promptplay-box .return').click(function () {
         $(this).parent().parent().hide();
     })
 
 
-        // 点击消息中心切换
+    // 点击消息中心切换
     $('.meg-click').mouseenter(function () {
         $('.meg-pop-up').slideDown();
         $('.userset-namerenbox,.accout-box').slideUp();
     });
     $('.meg-pop-up').mouseleave(function () {
-            $('.meg-pop-up').slideUp();
+        $('.meg-pop-up').slideUp();
     });
-        
+
 
     // 昵称
-    $('.nice').mouseenter(function(){
+    $('.nice').mouseenter(function () {
         $('.userset-namerenbox').slideDown();
         $('.meg-pop-up,.accout-box').slideUp();
     });
 
-    $('.userset-namerenbox').mouseleave(function(){
+    $('.userset-namerenbox').mouseleave(function () {
         $('.userset-namerenbox').slideUp();
     });
 
     // 账户余额
-    $('.accout').mouseenter(function(){
+    $('.accout').mouseenter(function () {
         $('.accout-box').slideDown();
         $('.userset-namerenbox,.meg-pop-up').slideUp();
     });
-    $('.accout-box').mouseleave(function(){
+    $('.accout-box').mouseleave(function () {
         $('.accout-box').slideUp();
     });
 })

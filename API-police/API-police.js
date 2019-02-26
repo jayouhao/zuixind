@@ -1,4 +1,16 @@
 $(function(){
+    //导航充值按钮
+    $(".inter-cz").click(function () {
+        $(".cz-topup").show();
+    })
+    //选择哪种支付方式
+    $(".method-img").click(function () {
+        $(this).css({ boxShadow: "0 0 1px blue" }).siblings().css({ boxShadow: "0 0 0" });
+    })
+    //取消支付
+    $(".canel").click(function () {
+        $(".popup-recharge").css({ display: "none" });
+    })
     //左边导航的
     $(".report").click(function () {
         $(".reporte8").removeClass("reporte8");

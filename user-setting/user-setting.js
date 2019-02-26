@@ -1,4 +1,22 @@
 $(function(){
+    var titleid=location.search.split("=")[1];
+    if(titleid=="attestation"){
+        $(".userset-box").css({display:"flex"});
+    }else{
+        $(".security-box").css({display:"flex"});
+    }
+    //导航充值按钮
+    $(".inter-cz").click(function(){
+        $(".cz-topup").show();
+    })
+    //选择哪种支付方式
+    $(".method-img").click(function () {
+        $(this).css({ boxShadow: "0 0 1px blue" }).siblings().css({ boxShadow: "0 0 0" });
+    })
+    //取消支付
+    $(".canel").click(function () {
+        $(".popup-recharge").css({ display: "none" });
+    })
     //返回    
     $(".setting-submit").click(function(){
         window.history.back(-1);

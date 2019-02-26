@@ -110,14 +110,6 @@ $(function () {
         $('.middle-selecth').css('display', 'none');
     })
 
-    
-   
-    $('.lidiv a').click(function () {
-        $(this).addClass('alit').parent().siblings().children().removeClass('alit');
-            var a = $(this).attr('id');
-            $('.help-ulone').hide();
-            $('#' + a + '-' + 'id').show();
-    })
 
     $('.middle-left li:nth-of-type(3)').click(function () {
         $('.help-main-li').hide().siblings('.help-ulone').show();
@@ -132,6 +124,14 @@ $(function () {
     })
 
 
+    // 点击显示子目录的内容
+    $('.lidiv a').click(function () {
+        $(this).addClass('alit').parent().siblings().children().removeClass('alit');
+            var a = $(this).attr('id');
+            $('.help-ulone').hide();
+            $('#' + a + '-' + 'id').show();
+    })
+
     // 点击左边导航帮助中心显示
     $('.help-center-con p').click(function () {
        $(this).siblings('.lidiv').toggle();
@@ -141,7 +141,7 @@ $(function () {
             $('.help-center-con img').css('transform', 'rotate(-360deg)');
             $('.help-center-con li').css({ 'border-bottom': '1px solid #E5E5E5' });
        }
-       
+
        if ($(this).siblings('.lidiv').css('display') == 'block') {
             $(this).parent().css({ 'border-bottom': 'none' });
             $(this).find('img').css('transform', 'rotate(90deg)')

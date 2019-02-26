@@ -1,4 +1,18 @@
 $(function () {
+    //导航充值按钮
+    $(".inter-cz").click(function () {
+        $(".cz-topup").show();
+    })
+
+    //选择哪种支付方式
+    $(".method-img").click(function () {
+        $(this).css({ boxShadow: "0 0 1px blue" }).siblings().css({ boxShadow: "0 0 0" });
+    })
+    //取消支付
+    $(".canel").click(function () {
+        $(".popup-recharge").css({ display: "none" });
+    })
+
     //返回    
     $(".setting-submit").click(function () {
         window.history.back(-1);
@@ -172,7 +186,7 @@ $(function () {
             console.log("你选择的=>", n, "页");
         }
     });
-       
+
 
     //输入分页的
     document.onkeydown = function (event) {
@@ -277,36 +291,36 @@ $(function () {
         }
     }
 
-    
 
 
-     
-     // 点击消息中心切换
-     $('.meg-click').mouseenter(function () {
+
+
+    // 点击消息中心切换
+    $('.meg-click').mouseenter(function () {
         $('.meg-pop-up').slideDown();
         $('.userset-namerenbox,.accout-box').slideUp();
     });
     $('.meg-pop-up').mouseleave(function () {
-            $('.meg-pop-up').slideUp();
+        $('.meg-pop-up').slideUp();
     });
-        
+
 
     // 昵称
-    $('.nice').mouseenter(function(){
+    $('.nice').mouseenter(function () {
         $('.userset-namerenbox').slideDown();
         $('.meg-pop-up,.accout-box').slideUp();
     });
 
-    $('.userset-namerenbox').mouseleave(function(){
+    $('.userset-namerenbox').mouseleave(function () {
         $('.userset-namerenbox').slideUp();
     });
 
     // 账户余额
-    $('.accout').mouseenter(function(){
+    $('.accout').mouseenter(function () {
         $('.accout-box').slideDown();
         $('.userset-namerenbox,.meg-pop-up').slideUp();
     });
-    $('.accout-box').mouseleave(function(){
+    $('.accout-box').mouseleave(function () {
         $('.accout-box').slideUp();
     });
 

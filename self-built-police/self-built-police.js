@@ -1,4 +1,9 @@
 $(function () {
+    //导航充值按钮
+    $(".inter-cz").click(function () {
+        $(".cz-topup").show();
+    })
+
     //左边导航的
     $(".report").click(function () {
         $(".reporte8").removeClass("reporte8");
@@ -308,7 +313,7 @@ $(function () {
     })
 
     //充值
-    $('.recharge-box .recharge-button').click(function(){
+    $('.recharge-box .recharge-button').click(function () {
         $('.cz-topup').show();
     })
 
@@ -378,33 +383,33 @@ $(function () {
     })
 
 
-    
-     // 点击消息中心切换
-     $('.meg-click').mouseenter(function () {
+
+    // 点击消息中心切换
+    $('.meg-click').mouseenter(function () {
         $('.meg-pop-up').slideDown();
         $('.userset-namerenbox,.accout-box').slideUp();
     });
     $('.meg-pop-up').mouseleave(function () {
-            $('.meg-pop-up').slideUp();
+        $('.meg-pop-up').slideUp();
     });
-        
+
 
     // 昵称
-    $('.nice').mouseenter(function(){
+    $('.nice').mouseenter(function () {
         $('.userset-namerenbox').slideDown();
         $('.meg-pop-up,.accout-box').slideUp();
     });
 
-    $('.userset-namerenbox').mouseleave(function(){
+    $('.userset-namerenbox').mouseleave(function () {
         $('.userset-namerenbox').slideUp();
     });
 
     // 账户余额
-    $('.accout').mouseenter(function(){
+    $('.accout').mouseenter(function () {
         $('.accout-box').slideDown();
         $('.userset-namerenbox,.meg-pop-up').slideUp();
     });
-    $('.accout-box').mouseleave(function(){
+    $('.accout-box').mouseleave(function () {
         $('.accout-box').slideUp();
     });
 })
