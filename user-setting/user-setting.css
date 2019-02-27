@@ -83,8 +83,7 @@ body{
     text-align: center;
     font-weight: bold;
 }
-.maincontent{
-    display: none;
+.maincontent{    
     width: 1200px;
     min-height: 1058px;
     margin: auto;
@@ -92,6 +91,7 @@ body{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    display: none;
 }
 .contenleft{
     background: rgba(0, 37, 160, 0.42);
@@ -168,6 +168,7 @@ body{
     margin-top: 5px;    
     position: relative;
     padding-bottom: 164px;
+    display: none;
 }
 .prot-red{
     margin-top: 30px;
@@ -665,6 +666,7 @@ input[type="number"]{
     position: absolute;
     right: 20px;
     top: 15px;
+    cursor: pointer;
 }
 .play-right .content-unread{
     margin-top: 40px;
@@ -860,7 +862,7 @@ input[type="number"]{
 .login-password{
     width: 550px;
 }
-.iphoe-play-box,.change-pass-box,.setting-box{
+.alluser-box {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -1014,6 +1016,87 @@ input[type="number"]{
     color: #434343;
 }
 
+.email-play{
+    position: fixed;
+    width: 800px;
+    padding: 20px;
+    background: white;
+    top:5%;
+    left: 50%;
+    margin-left: -400px;
+}
+.email-ul{
+    width: 58%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #757574;
+    margin: auto;
+    margin: 40px auto 20px;
+}
+.email-top{
+    font-size: 18px;
+}
+.email-top img{
+    width: 30px;
+    margin-right: 10px;
+}
+.email-play .delet{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+}
+.email-ul .left li{
+    text-align: right;
+    margin-bottom: 28px;
+}
+.email-ul .left li:nth-of-type(2){
+   position: relative;
+   top: -4px;
+}
+.email-ul .right-e input{
+    width: 210px;
+    height: 40px;
+}
+.email-ul .right-e li{
+    margin-bottom: 15px;
+}
+.email-ul .right-e button{
+    width: 126px;
+    height: 40px;
+    background: #F1914A;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+}
+.email-play .email-q{
+    width: 130px;
+    height: 40px;
+    color: white;
+    background: #00A1E9;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 40%;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.email-play .footer{
+    width: 90%;
+    height: 145px;
+    border:1px solid #6CDDFF;
+    background: #D7F3FF;
+    padding: 20px;
+    margin:30px  auto 20px;
+}
+.email-play .footer li{
+    font-size: 16px;
+    color: #535555;
+    margin-bottom: 10px;
+}
+.no-emailnumber{
+    font-size: 24px;
+}
 .meg-pop-up{
     z-index: 1;
     height: 260px;
@@ -1313,3 +1396,79 @@ input{
     background: #D2D2D2;
 }
 /* end */
+
+
+.attestation-type{
+    display: block;
+}
+.type-name{
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 40px; 
+}
+.type-centen{
+    display: flex;
+    justify-content: space-between;
+    width: 670px;
+    margin: auto;
+    z-index: 3;
+    position: relative;
+    background: #fff;
+}
+.centen-borber{
+    border: 1px solid #00A1E9;
+    border-radius: 6px;
+    width: 300px;
+    height: 181px;
+    padding: 30px 0 5px 19px;
+    display: flex;
+}
+.centen-borber img{
+    width: 112px;
+    margin-right: 30px;
+}
+.centen-borber .img1{
+    height: 143px;
+    width: 124px;
+}
+.type1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 46px;
+    margin-top: 10px;
+    text-align: center;
+}
+.type-button{
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background: #00B7EE;
+}
+.type-ringhts{
+    position: absolute;
+    right: 0;
+    top: 215px;
+    width: 441px;
+    z-index: 0;
+}
+.firm-recharge .popup-box{
+    height: auto;
+}
+.popup-recharge23{
+    position: absolute;
+}
+.popup-recharge23 .popup-box{
+    height: auto;
+}
+.popup-recharge23 .popup-namey{
+    font-size: 34px;
+    color: #00A2E8;
+    width: 96%;
+    margin-left: 2%;
+    text-align: center;
+    padding: 35px 0 20px 0;
+    border-bottom: 1px solid #DCDCDC;
+    margin-bottom: 40px;
+    font-weight: bold;
+}

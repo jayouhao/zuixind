@@ -485,9 +485,9 @@ body{
 .data-operationg .delete-img{
     margin-right: 0;
 }
-.data-list .list-li:hover{
+/* .data-list .list-li:hover{
     background: #83D9FF;
-}
+} */
 
 .check{
     display: none;
@@ -646,6 +646,10 @@ body{
 .update-times{
     margin-bottom: 20px;
 }
+.update-times input{
+    width: auto;
+    height: auto;
+}
 .update-left .chang-du{
     margin-bottom: 38px;
 }
@@ -785,7 +789,14 @@ body{
 .establish-hides,
 .establish-hides1{
     display: none;
-    position: relative;    
+    position: relative;  
+}
+.establish-hides input,
+.establish-hides1 input,
+.checkbox-update input
+,.status-radio input{
+    width: auto;
+    height: auto;  
 }
 .heights{
     height: 50px;

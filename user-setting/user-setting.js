@@ -27,6 +27,14 @@ $(function(){
         $(".iphoe-play-box").show();
     })
 
+    // 修改邮箱
+    $('.set-mailbox').click(function(){
+        $('.email-box').show();
+    })
+
+    $('.email-play .delet').click(function(){
+        $('.email-box').hide();
+    })
     //返回    
     $(".setting-submit").click(function(){
         window.history.back(-1);
@@ -87,6 +95,14 @@ $(function(){
         $(this).parents('.tilte-li').hide().parents().siblings('.noread-div').show();
     })
 
+    //进入个人认证
+    $(".type-button1").click(function(){
+        $(".popup-recharge23").show();
+    })
+    //进入企业认证
+    $(".type-button2").click(function(){
+        $(".firm-recharge").show();
+    })
 
     // 已读公告内容详情
     $('.hasread-div li').click(function(){

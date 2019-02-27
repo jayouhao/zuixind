@@ -80,7 +80,7 @@
                 <span class="gneral">用&nbsp;户&nbsp;设&nbsp;置</span>
             </div>
             <hr class="linehr">
-            <p class="report reporte8">实名认证</p>
+            <p class="report reporte8">实名认证</p>            
         </div>
         <div class="contentright">
             <div class="conright-top">
@@ -99,6 +99,7 @@
                                 alt="">财务管理</a></li>
                 </ul>
             </div>
+            <!-- 实名认证 -->
             <div class="cetnen-prot">
                 <p class="nav">设置>>用户设置>>实名认证</p>
                 <!-- 个人用户完成认证的 -->
@@ -141,10 +142,32 @@
                     <img src="../img/user-setting.png" alt="">
                 </div>
             </div>
+            <!-- 认证类型 -->
+            <div class="cetnen-prot attestation-type">
+                <p class="nav">设置>>用户设置>>认证类型</p>                
+                <p class="type-name">请选择以下认证类型</p>
+                <div class="type-centen">
+                    <div class="centen-borber">
+                        <img src="../img/typeleft.png" alt="">
+                        <div>
+                            <p class="type1">个人认证</p>
+                            <button type="button" class="type-button type-button1">点击进入</button>
+                        </div>
+                    </div>
+                    <div class="centen-borber">
+                        <img class="img1" src="../img/type-right.png" alt="">
+                        <div>
+                            <p class="type1">企业认证</p>
+                            <button type="button" class="type-button type-button2">点击进入</button>
+                        </div>
+                    </div>
+                </div>
+                <img src="../img/type-bottom.png" class="type-ringhts" alt="">
+            </div>
         </div>
 
         <!-- 个人认证资料 弹出 -->
-        <div class="popup-recharge">
+        <div class="popup-recharge popup-recharge23">
                 <div class="check-background"></div>
                 <div class="popup-box">
                     <p class="popup-namey">个人认证资料</p>
@@ -397,7 +420,7 @@
                             <button type="button" class="change-set set-phone">修&nbsp;&nbsp;改</button>
                         </div>
                     </li>
-                    <li>
+                    <li class="email-li">
                         <div class="login-password">
                             <div class="login-top-two">
                                 <p class="level-p">备用邮箱：</p>
@@ -416,7 +439,7 @@
                 </ul>
             </div>
             <!-- 绑定手机号弹框 -->
-            <div class="iphoe-play-box">
+            <div class="alluser-box iphoe-play-box">
                 <div class="small-play">
                     <div class="play-warpbox">
                         <ul class="play-lefts">
@@ -436,7 +459,7 @@
             </div>
 
             <!-- 修改密码弹框 -->
-            <div class="change-pass-box">
+            <div class="alluser-box change-pass-box">
                 <div class="change-pass-small">
                     <p class="change-titlep">修改密码</p>
                     <img src="../img/x.png" alt="" class="change-delet">
@@ -457,7 +480,7 @@
             </div>
 
               <!-- 设置成功 -->
-              <div class="setting-box">
+              <div class="alluser-box setting-box">
                 <div class="setting-small">
                     <p class="change-titlep">设&nbsp;&nbsp;置</p>
                     <img src="../img/x.png" alt="" class="set-delet">
@@ -465,6 +488,33 @@
                         <img src="../img/check.png" alt="">
                         <span>修改成功！</span>
                     </p>
+                </div>
+            </div>
+            <!-- 点击邮箱修改弹框 -->
+            <div class="alluser-box email-box">
+                <div class="email-play">
+                    <p class="email-top"><img src="../img/tanhao.png" alt="">请确保你输入的邮箱正常接收激活邮件，邮箱才能生效。</p>
+                    <img src="../img/x.png" alt="" class="delet">
+                    <div class="email-ul">
+                        <ul class="left">
+                            <li>登录名：</li>
+                            <li>邮箱：</li>
+                            <li>验证码：</li>
+                        </ul>
+                        <ul class="right-e">
+                            <li>加***圈</li>
+                            <li><input type="text"></li>
+                            <li><input type="number" placeholder="6位数字"><button type="button">获取验证码</button></li>
+                        </ul>
+                    </div>
+                    <button type="button" class="email-q">确&nbsp;&nbsp;认</button>
+                    <div class="footer">
+                        <p class="no-emailnumber">没收到邮箱验证码</p>
+                        <ol>
+                            <li>1、网络通讯异常可能造成邮件丢失，请重新获取或稍后再试。</li>
+                            <li>2、请核实邮件是否正常使用，并检查垃圾邮箱夹。</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
     </div>
