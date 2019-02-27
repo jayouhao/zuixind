@@ -158,6 +158,9 @@ body{
     margin-bottom: 20px;
     font-size: 16px;
 }
+.cetnen-prot12{
+    display: none;
+}
 .cetnen-prot{
     min-height: 836px;   
     padding: 20px;

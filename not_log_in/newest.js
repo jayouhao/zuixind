@@ -94,13 +94,18 @@ $(function () {
 
     //点击左边导航的
     $(".middle-select").click(function () {
-        document.title = $(this).find("p").text();
+        var xuan=$(this).find("p").text();
+        document.title = xuan;
+        if(xuan=="帮助中心"){
+            $(".noflex").show();
+        }else{
+            $(".noflex").hide();
+        }
         var clas = $(this).attr("id");
         $(".select-ok").removeClass("select-ok");
         $(this).addClass("select-ok")
         $(".block").removeClass("block");
-        $("." + clas).addClass("block");
-        console.log(clas);
+        $("." + clas).addClass("block");        
     });
 
     $('.appear').click(function () {
@@ -135,6 +140,7 @@ $(function () {
     // 点击左边导航帮助中心显示
     $('.help-center-con p').click(function () {
        $(this).siblings('.lidiv').toggle();
+       $(this).siblings('.lidiv').find("p").eq(0).find("a").click();
        $(this).parent().siblings().find('.lidiv').hide();
 
        if( $(this).parent().siblings().find('.lidiv').css("display")=='none'){
