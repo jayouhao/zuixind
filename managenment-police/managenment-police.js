@@ -251,7 +251,7 @@ $(function () {
     $('.switch-en-per .prot-type').click(function () {
         let a = $(this).text();
         console.log(a);
-        $('.personage input').val(a);
+        // $('.personage input').val(a);
     })
 
     $('.poseren').click(function () {

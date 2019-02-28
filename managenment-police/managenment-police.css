@@ -158,6 +158,9 @@ body{
     color: white;
     text-decoration: none;
 }
+.in-type-messge input{
+    cursor: text;
+}
 .headrigth-top li:nth-of-type(4){
     margin-right: 20px;
 }
@@ -2113,8 +2116,7 @@ button{
 }
 
 .meg-pop-up{
-    z-index: 1;
-    height: 260px;
+    z-index: 1;    
     width: 200px;
     padding: 10px 16px;
     color: white;
@@ -2131,6 +2133,9 @@ button{
 }
 .meg-pop-up li p{
     position: relative;
+}
+.meg-pop-up li p:nth-child(1){
+    cursor: pointer;
 }
 .standing-p{
     font-size: 11px;

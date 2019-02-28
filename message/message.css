@@ -316,8 +316,7 @@ ul{
     position: relative;    
 }
 .meg-pop-up{
-    z-index: 1;
-    height: 260px;
+    z-index: 1;    
     width: 200px;
     padding: 10px 16px;
     color: white;
@@ -334,6 +333,9 @@ ul{
 }
 .meg-pop-up li p{
     position: relative;
+}
+.meg-pop-up li p:nth-child(1){
+    cursor: pointer;
 }
 .standing-p{
     font-size: 11px;
